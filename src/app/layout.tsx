@@ -41,7 +41,6 @@ export const metadata: Metadata = {
   authors: [{ name: 'PT Gama Intisamudera' }],
   icons: {
     icon: [
-      { url: '/favicon.svg', type: 'image/svg+xml' },
       { url: '/favicon.png', type: 'image/png', sizes: '32x32' },
     ],
     apple: '/apple-touch-icon.png',
@@ -91,7 +90,7 @@ export default function RootLayout({
               '@type': 'Organization',
               name: 'PT Gama Intisamudera',
               url: 'https://gamaintisamudera.com',
-              logo: 'https://gamaintisamudera.com/logo.svg',
+              logo: 'https://gamaintisamudera.com/logo-gis.png',
               description: 'Spesialis transportasi heavy lift dan project cargo di seluruh Indonesia sejak 1995.',
               address: {
                 '@type': 'PostalAddress',

@@ -56,10 +56,10 @@ export function Navbar() {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2.5 flex-shrink-0">
             <Image
-              src="/logo.svg"
+              src="/logo-gis.png"
               alt="GIS Logo"
-              width={40}
-              height={40}
+              width={200}
+              height={198}
               className="w-10 h-10 object-contain"
               priority
             />

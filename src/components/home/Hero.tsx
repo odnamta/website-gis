@@ -35,7 +35,7 @@ export function Hero() {
           className="mb-8"
         >
           <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-yellow-500/10 border border-yellow-500/20 text-yellow-400 text-sm font-medium">
-            <Image src="/logo.svg" alt="GIS Logo" width={20} height={20} className="w-5 h-5 object-contain rounded-sm" />
+            <Image src="/logo-gis.png" alt="GIS Logo" width={200} height={198} className="w-6 h-6 object-contain rounded-sm bg-white/90 p-0.5" />
             PT Gama Intisamudera
           </div>
         </motion.div>

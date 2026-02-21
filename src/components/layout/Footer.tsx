@@ -18,11 +18,11 @@ export function Footer() {
           <div>
             <div className="flex items-center gap-2.5 mb-4">
               <Image
-                src="/logo.svg"
+                src="/logo-gis.png"
                 alt="GIS Logo"
-                width={40}
-                height={40}
-                className="w-10 h-10 object-contain"
+                width={200}
+                height={198}
+                className="w-10 h-10 object-contain bg-white rounded-lg p-0.5"
               />
               <div>
                 <div className="font-heading font-bold text-sm leading-tight">Gama</div>
