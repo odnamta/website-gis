@@ -1,59 +1,63 @@
-# CLAUDE.md — GLS Corporate Website
+# CLAUDE.md — GIS Corporate Website
 
 ## Project Overview
-Corporate website for **PT Gama Lintas Samudera** — international freight forwarding agency based in Surabaya, Indonesia. Part of the Gama Group.
+Corporate website for **PT. Gama Intisamudera** — heavy-lift logistics and project cargo company, est. 1995, Surabaya, Indonesia. Part of the Gama Group.
 
-**Purpose:** Professional corporate web presence for GLS. Services showcase, quote requests, company information.
+**Purpose:** Professional corporate web presence. Services showcase, project portfolio, quote requests, company information.
+**Domain:** gamaintisamudera.com
 
 ## Tech Stack
 - **Framework:** Next.js 16 (App Router) + TypeScript
-- **Styling:** Tailwind CSS 4 + `@theme` (navy blue + gold)
+- **Styling:** Tailwind CSS 4 (`@theme` tokens)
 - **Animations:** motion (Framer Motion)
 - **Icons:** lucide-react
-- **Deployment:** Vercel (static export)
+- **Deployment:** Vercel (static export, `output: 'export'`)
 - **Forms:** Formspree
 - **Analytics:** @vercel/analytics
 - **Fonts:** Poppins (headings) + Inter (body) via `next/font/google`
 - **i18n:** Client-side React Context, ID/EN toggle, `?lang=en` support
 
 ## Design System
-- **Primary:** Navy #0B1D3E
-- **Accent:** Gold #C5963A
-- **Surface:** Slate #F8FAFC
-- **Font heading:** `font-heading` (Poppins)
-- **Font body:** `font-sans` (Inter)
+- **Primary:** Green #0D4D25
+- **Accent:** Yellow #F5C518
+- **Surface:** #F5F5F0
+- **Style:** Bold, industrial, Mammoet-inspired dark sections
 
-## Pages (10 routes + dynamic)
+## Pages
 | Route | Page |
 |-------|------|
-| `/` | Home |
-| `/about` | About |
-| `/services` | Services overview |
-| `/services/[slug]` | Service detail (6 sub-pages) |
-| `/routes` | Routes & coverage |
-| `/case-studies` | Case studies grid |
-| `/case-studies/[slug]` | Case study detail |
-| `/news` | News |
-| `/careers` | Careers |
-| `/partners` | Partners |
-| `/contact` | Contact / quote form |
-| `/faq` | FAQ |
+| `/` | Home — hero, services, stats, projects, testimonials, news |
+| `/about` | Company story, vision & mission, timeline, certifications |
+| `/services` | 3 service categories overview |
+| `/services/[slug]` | Service detail (freight-forwarding, project-cargo, mechanical-erection) |
+| `/projects` | Project portfolio grid |
+| `/projects/[slug]` | Project case study detail |
+| `/equipment` | Heavy-lift equipment catalog |
+| `/team` | Leadership team profiles |
+| `/gallery` | Photo gallery |
+| `/news` | Company and industry news |
+| `/careers` | Open positions and culture |
+| `/partners` | Client and partner logos |
+| `/contact` | Quote request form (Formspree) |
+| `/faq` | Frequently asked questions |
 
 ## Commands
 ```bash
-npm run dev          # Dev server
-npm run build        # Production build (static export)
+npm run dev          # Dev server (localhost:3000)
+npm run build        # Production build (static export to out/)
 ```
 
 ## Architecture
-- All user-facing text through i18n (no hardcoded strings)
-- Data layer: `src/lib/data/` — 12 data files
-- Shared components: `src/components/shared/` — 12 reusable components
+- All user-facing text through i18n — no hardcoded strings
+- Data layer: `src/lib/data/` — static TS data files
+- Shared components: `src/components/shared/` — reusable UI primitives
 - Layout: PageWrapper wraps LanguageProvider + Navbar + Footer
 - Mega-menu: Services dropdown with icons and descriptions
+- Pages are Server Components; content extracted to `*Content.tsx` client components
 
 ## Rules
-- `output: 'export'` — no server-side features
-- All images optimized via next/image (unoptimized for static export)
+- `output: 'export'` — no server-side features (no API routes, no SSR)
+- All images via next/image (unoptimized for static export)
 - Mobile-first responsive design
-- Lighthouse target: 95+
+- Lighthouse target: 95+ all metrics
+- Indonesian locale default, English toggle
