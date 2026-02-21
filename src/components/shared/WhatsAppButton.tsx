@@ -4,8 +4,7 @@ import { MessageCircle } from 'lucide-react'
 import { company } from '@/lib/data/company'
 
 export function WhatsAppButton() {
-  const phone = company.phone.replace(/\+/g, '')
-  const url = `https://wa.me/${phone}`
+  const url = `https://wa.me/${company.whatsapp}`
 
   return (
     <a

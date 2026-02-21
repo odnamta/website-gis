@@ -9,20 +9,33 @@ export function Stats() {
 
   return (
     <section className="py-20 bg-green-900 relative overflow-hidden">
-      {/* Subtle industrial pattern */}
-      <div className="absolute inset-0 opacity-[0.03]" style={{
-        backgroundImage: 'repeating-linear-gradient(-45deg, transparent, transparent 35px, rgba(255,255,255,1) 35px, rgba(255,255,255,1) 36px)',
+      {/* Grid pattern */}
+      <div className="absolute inset-0 opacity-[0.04]" style={{
+        backgroundImage: `
+          linear-gradient(rgba(255,255,255,0.3) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(255,255,255,0.3) 1px, transparent 1px)
+        `,
+        backgroundSize: '60px 60px',
       }} />
+      {/* Glow accents */}
+      <div className="absolute -left-32 top-1/2 -translate-y-1/2 w-64 h-64 bg-yellow-500/10 rounded-full blur-3xl" />
+      <div className="absolute -right-32 top-1/2 -translate-y-1/2 w-64 h-64 bg-yellow-500/10 rounded-full blur-3xl" />
+
       <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6">
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
-          {stats.map((stat) => (
-            <StatCounter
-              key={stat.labelKey}
-              value={stat.value}
-              suffix={stat.suffix}
-              label={t.hero.stats[stat.labelKey]}
-              light
-            />
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-4">
+          {stats.map((stat, i) => (
+            <div key={stat.labelKey} className="relative">
+              <StatCounter
+                value={stat.value}
+                suffix={stat.suffix}
+                label={t.hero.stats[stat.labelKey]}
+                light
+              />
+              {/* Vertical divider between stats on desktop */}
+              {i < stats.length - 1 && (
+                <div className="hidden lg:block absolute right-0 top-1/2 -translate-y-1/2 w-px h-12 bg-white/10" />
+              )}
+            </div>
           ))}
         </div>
       </div>

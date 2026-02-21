@@ -18,7 +18,7 @@ export function Footer() {
           <div>
             <div className="flex items-center gap-2.5 mb-4">
               <Image
-                src="/logo.png"
+                src="/logo.svg"
                 alt="GIS Logo"
                 width={40}
                 height={40}

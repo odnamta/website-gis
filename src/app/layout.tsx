@@ -91,7 +91,7 @@ export default function RootLayout({
               '@type': 'Organization',
               name: 'PT Gama Intisamudera',
               url: 'https://gamaintisamudera.com',
-              logo: 'https://gamaintisamudera.com/logo.png',
+              logo: 'https://gamaintisamudera.com/logo.svg',
               description: 'Spesialis transportasi heavy lift dan project cargo di seluruh Indonesia sejak 1995.',
               address: {
                 '@type': 'PostalAddress',
