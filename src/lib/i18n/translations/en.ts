@@ -128,7 +128,7 @@ export const en: Translations = {
       {
         title: '30+ Years of Experience',
         description:
-          'Established in 1995, PT Gama Intisamudera has proven its reliability and competence through hundreds of heavy lift projects across multiple industrial sectors.',
+          'Established in 1995, PT. Gama Intisamudera has proven its reliability and competence through hundreds of heavy lift projects across multiple industrial sectors.',
       },
       {
         title: 'Zero Incident Record',
@@ -150,13 +150,13 @@ export const en: Translations = {
   partners: {
     pageTitle: 'Our Partners & Clients',
     pageSubtitle:
-      'PT Gama Intisamudera is trusted by leading companies in Indonesia and internationally.',
+      'PT. Gama Intisamudera is trusted by leading companies in Indonesia and internationally.',
     sectionTitle: 'Our Clients & Partners',
   },
   testimonials: {
     sectionTitle: 'Client Testimonials',
     sectionSubtitle:
-      'Hear directly from our clients about their experience working with PT Gama Intisamudera.',
+      'Hear directly from our clients about their experience working with PT. Gama Intisamudera.',
   },
   latestNews: {
     sectionTitle: 'Latest News',
@@ -174,10 +174,10 @@ export const en: Translations = {
   about: {
     pageTitle: 'About Us',
     pageSubtitle:
-      'Get to know PT Gama Intisamudera — heavy lift and project logistics specialist since 1995.',
+      'Get to know PT. Gama Intisamudera — heavy lift and project logistics specialist since 1995.',
     storyTitle: 'Our Story',
     story: [
-      'PT Gama Intisamudera was established in 1995 in Surabaya as a company specializing in heavy lift transportation and project logistics. From the beginning, the company has focused on handling oversized and overweight project cargo for industries across Indonesia.',
+      'PT. Gama Intisamudera was established in 1995 in Surabaya as a company specializing in heavy lift transportation and project logistics. From the beginning, the company has focused on handling oversized and overweight project cargo for industries across Indonesia.',
       'Over three decades, GIS has built a strong reputation through the successful handling of over 100 major projects across various industrial sectors including petrochemicals, power generation, cement, mining, and port infrastructure. With the tagline "Professional, Proportional, Objective, and Nationalism," we are committed to delivering the best services for the advancement of Indonesian industry.',
       'Strategically located in Surabaya with access to Tanjung Perak Port, GIS is supported by 65+ experienced professionals in engineering, heavy lift operations, and project management. Our three service pillars — Freight Forwarding, Project Cargo, and Mechanical Erection — provide integrated solutions from delivery to installation.',
     ],
@@ -214,7 +214,7 @@ export const en: Translations = {
   team: {
     pageTitle: 'Our Team',
     pageSubtitle:
-      'Meet the professional team behind the success of every PT Gama Intisamudera project.',
+      'Meet the professional team behind the success of every PT. Gama Intisamudera project.',
   },
   gallery: {
     pageTitle: 'Gallery',
@@ -283,12 +283,12 @@ export const en: Translations = {
   },
   footer: {
     companyDescription:
-      'PT Gama Intisamudera is a heavy lift and project logistics company based in Surabaya, operating since 1995. Specializing in freight forwarding, project cargo handling, and mechanical erection for industrial projects across Indonesia.',
+      'PT. Gama Intisamudera is a heavy lift and project logistics company based in Surabaya, operating since 1995. Specializing in freight forwarding, project cargo handling, and mechanical erection for industrial projects across Indonesia.',
     quickLinks: 'Quick Links',
     services: 'Services',
     contact: 'Contact Us',
     copyright:
-      '\u00A9 {year} PT Gama Intisamudera. All rights reserved.',
+      '\u00A9 {year} PT. Gama Intisamudera. All rights reserved.',
     newsletter: {
       title: 'Stay Informed',
       placeholder: 'Enter your email address',

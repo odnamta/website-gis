@@ -128,7 +128,7 @@ export const id: Translations = {
       {
         title: 'Pengalaman 30+ Tahun',
         description:
-          'Berdiri sejak 1995, PT Gama Intisamudera telah membuktikan keandalan dan kompetensinya dalam menangani ratusan proyek heavy lift di berbagai sektor industri.',
+          'Berdiri sejak 1995, PT. Gama Intisamudera telah membuktikan keandalan dan kompetensinya dalam menangani ratusan proyek heavy lift di berbagai sektor industri.',
       },
       {
         title: 'Zero Incident Record',
@@ -150,13 +150,13 @@ export const id: Translations = {
   partners: {
     pageTitle: 'Mitra & Klien Kami',
     pageSubtitle:
-      'PT Gama Intisamudera telah dipercaya oleh berbagai perusahaan terkemuka di Indonesia dan internasional.',
+      'PT. Gama Intisamudera telah dipercaya oleh berbagai perusahaan terkemuka di Indonesia dan internasional.',
     sectionTitle: 'Klien & Mitra Kami',
   },
   testimonials: {
     sectionTitle: 'Testimoni Klien',
     sectionSubtitle:
-      'Dengarkan langsung dari klien kami tentang pengalaman mereka bekerja sama dengan PT Gama Intisamudera.',
+      'Dengarkan langsung dari klien kami tentang pengalaman mereka bekerja sama dengan PT. Gama Intisamudera.',
   },
   latestNews: {
     sectionTitle: 'Berita Terbaru',
@@ -174,10 +174,10 @@ export const id: Translations = {
   about: {
     pageTitle: 'Tentang Kami',
     pageSubtitle:
-      'Mengenal lebih dekat PT Gama Intisamudera — spesialis heavy lift dan project logistics sejak 1995.',
+      'Mengenal lebih dekat PT. Gama Intisamudera — spesialis heavy lift dan project logistics sejak 1995.',
     storyTitle: 'Cerita Kami',
     story: [
-      'PT Gama Intisamudera didirikan pada tahun 1995 di Surabaya sebagai perusahaan yang bergerak di bidang heavy lift transportation dan project logistics. Sejak awal, perusahaan telah memfokuskan diri pada penanganan kargo proyek berdimensi besar dan berat berlebih untuk industri di seluruh Indonesia.',
+      'PT. Gama Intisamudera didirikan pada tahun 1995 di Surabaya sebagai perusahaan yang bergerak di bidang heavy lift transportation dan project logistics. Sejak awal, perusahaan telah memfokuskan diri pada penanganan kargo proyek berdimensi besar dan berat berlebih untuk industri di seluruh Indonesia.',
       'Selama lebih dari tiga dekade, GIS telah membangun reputasi yang kuat melalui keberhasilan menangani lebih dari 100 proyek besar di berbagai sektor industri termasuk petrokimia, pembangkit listrik, semen, pertambangan, dan infrastruktur pelabuhan. Dengan tagline "Professional, Proportional, Objective, and Nationalism", kami berkomitmen memberikan layanan terbaik untuk kemajuan industri Indonesia.',
       'Berlokasi strategis di Surabaya dengan akses ke Pelabuhan Tanjung Perak, GIS didukung oleh 65+ tenaga profesional yang berpengalaman di bidang engineering, operasi heavy lift, dan manajemen proyek. Tiga pilar layanan kami — Freight Forwarding, Project Cargo, dan Mechanical Erection — memberikan solusi terintegrasi dari pengiriman hingga pemasangan.',
     ],
@@ -214,7 +214,7 @@ export const id: Translations = {
   team: {
     pageTitle: 'Tim Kami',
     pageSubtitle:
-      'Kenali tim profesional di balik keberhasilan setiap proyek PT Gama Intisamudera.',
+      'Kenali tim profesional di balik keberhasilan setiap proyek PT. Gama Intisamudera.',
   },
   gallery: {
     pageTitle: 'Galeri',
@@ -283,12 +283,12 @@ export const id: Translations = {
   },
   footer: {
     companyDescription:
-      'PT Gama Intisamudera adalah perusahaan heavy lift dan project logistics yang berbasis di Surabaya, beroperasi sejak 1995. Spesialis freight forwarding, project cargo handling, dan mechanical erection untuk proyek industri di seluruh Indonesia.',
+      'PT. Gama Intisamudera adalah perusahaan heavy lift dan project logistics yang berbasis di Surabaya, beroperasi sejak 1995. Spesialis freight forwarding, project cargo handling, dan mechanical erection untuk proyek industri di seluruh Indonesia.',
     quickLinks: 'Tautan Cepat',
     services: 'Layanan',
     contact: 'Kontak',
     copyright:
-      '\u00A9 {year} PT Gama Intisamudera. Seluruh hak cipta dilindungi undang-undang.',
+      '\u00A9 {year} PT. Gama Intisamudera. Seluruh hak cipta dilindungi undang-undang.',
     newsletter: {
       title: 'Berlangganan Newsletter',
       placeholder: 'Masukkan alamat email Anda',

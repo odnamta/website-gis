@@ -54,7 +54,7 @@ export function FeaturedProjects() {
         </div>
         <div className="text-center mt-10">
           <Link
-            href="/case-studies"
+            href="/projects"
             className="inline-flex items-center gap-2 text-sm font-semibold text-green-900 hover:text-yellow-600 transition-colors"
           >
             {t.common.viewAll}

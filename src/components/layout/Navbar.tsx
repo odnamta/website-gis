@@ -32,7 +32,11 @@ export function Navbar() {
     { key: 'about', href: '/about', label: t.nav.about },
     { key: 'services', href: '/services', label: t.nav.services, hasChildren: true },
     { key: 'projects', href: '/projects', label: t.nav.projects },
-    { key: 'partners', href: '/partners', label: t.nav.partners },
+    { key: 'equipment', href: '/equipment', label: t.nav.equipment },
+    { key: 'team', href: '/team', label: t.nav.team },
+    { key: 'gallery', href: '/gallery', label: t.nav.gallery },
+    { key: 'news', href: '/news', label: t.nav.news },
+    { key: 'careers', href: '/careers', label: t.nav.careers },
     { key: 'contact', href: '/contact', label: t.nav.contact },
   ]
 
@@ -60,10 +64,10 @@ export function Navbar() {
               priority
             />
             <div className="hidden sm:block">
-              <div className="text-green-900 font-heading font-bold text-sm leading-tight">
-                Gama
+              <div className="text-green-900 font-heading font-bold text-sm leading-tight uppercase tracking-wide">
+                PT. Gama
               </div>
-              <div className="text-green-900 font-heading font-bold text-sm leading-tight">
+              <div className="text-green-900 font-heading font-bold text-sm leading-tight uppercase tracking-wide">
                 Intisamudera
               </div>
             </div>

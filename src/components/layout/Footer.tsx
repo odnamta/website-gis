@@ -40,10 +40,9 @@ export function Footer() {
             <ul className="space-y-2.5">
               {[
                 { label: t.nav.about, href: '/about' },
+                { label: t.nav.services, href: '/services' },
                 { label: t.nav.projects, href: '/projects' },
-                { label: t.nav.news, href: '/news' },
-                { label: t.nav.careers, href: '/careers' },
-                { label: t.nav.faq, href: '/faq' },
+                { label: t.nav.equipment, href: '/equipment' },
               ].map((link) => (
                 <li key={link.href}>
                   <Link
@@ -57,14 +56,15 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* Column 3: Services */}
+          {/* Column 3: More Links */}
           <div>
-            <h3 className="font-heading font-semibold text-yellow-400 mb-4">{t.footer.services}</h3>
+            <h3 className="font-heading font-semibold text-yellow-400 mb-4">Info</h3>
             <ul className="space-y-2.5">
               {[
-                { label: t.services.freightForwarding.title, href: '/services/freight-forwarding' },
-                { label: t.services.projectCargo.title, href: '/services/project-cargo' },
-                { label: t.services.mechanicalErection.title, href: '/services/mechanical-erection' },
+                { label: t.nav.team, href: '/team' },
+                { label: t.nav.gallery, href: '/gallery' },
+                { label: t.nav.news, href: '/news' },
+                { label: t.nav.careers, href: '/careers' },
               ].map((link) => (
                 <li key={link.href}>
                   <Link
