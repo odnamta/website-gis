@@ -131,15 +131,15 @@ export function ContactContent() {
                         <div className="grid grid-cols-3 gap-4">
                           <div>
                             <label htmlFor="cargoLength" className="sr-only">{lengthLabel}</label>
-                            <input id="cargoLength" name="cargoLength" type="number" step="0.01" placeholder={lengthLabel} className={inputClasses} />
+                            <input id="cargoLength" name="cargoLength" type="number" min="0" step="0.01" placeholder={lengthLabel} className={inputClasses} />
                           </div>
                           <div>
                             <label htmlFor="cargoWidth" className="sr-only">{widthLabel}</label>
-                            <input id="cargoWidth" name="cargoWidth" type="number" step="0.01" placeholder={widthLabel} className={inputClasses} />
+                            <input id="cargoWidth" name="cargoWidth" type="number" min="0" step="0.01" placeholder={widthLabel} className={inputClasses} />
                           </div>
                           <div>
                             <label htmlFor="cargoHeight" className="sr-only">{heightLabel}</label>
-                            <input id="cargoHeight" name="cargoHeight" type="number" step="0.01" placeholder={heightLabel} className={inputClasses} />
+                            <input id="cargoHeight" name="cargoHeight" type="number" min="0" step="0.01" placeholder={heightLabel} className={inputClasses} />
                           </div>
                         </div>
                       </div>

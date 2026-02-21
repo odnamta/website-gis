@@ -273,10 +273,10 @@ export const id: Translations = {
     },
     info: {
       title: 'Informasi Kontak',
-      address: 'Jl. Tanjung Priok No 12-12A, Surabaya, Jawa Timur, Indonesia',
-      phone: '031-3296003',
+      address: 'Alamat',
+      phone: 'Telepon',
       fax: 'Faks',
-      email: 'info@gama-group.co',
+      email: 'Email',
       hours: 'Senin - Jumat: 08.00 - 17.00 WIB | Sabtu: 08.00 - 12.00 WIB',
     },
   },
