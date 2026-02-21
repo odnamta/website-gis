@@ -4,9 +4,9 @@ import { ServicesContent } from '@/components/services/ServicesContent'
 
 export const metadata: Metadata = {
   title: 'Layanan',
-  description: 'Ocean freight, air freight, customs brokerage, warehousing, land transport, dan project cargo.',
+  description: 'Freight forwarding, project cargo, dan mechanical erection oleh PT Gama Intisamudera.',
   alternates: { canonical: '/services' },
-  openGraph: { title: 'Layanan — Gama Lintas Samudera', description: 'Solusi logistik lengkap untuk kebutuhan pengiriman internasional.' },
+  openGraph: { title: 'Layanan — PT Gama Intisamudera', description: 'Tiga pilar layanan terintegrasi untuk proyek industri Anda.' },
 }
 
 export default function Services() {

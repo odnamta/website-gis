@@ -11,7 +11,7 @@ interface SectionHeadingProps {
 export function SectionHeading({ title, subtitle, centered = true, light = false, as: Tag = 'h2' }: SectionHeadingProps) {
   return (
     <AnimateOnScroll className={`mb-12 ${centered ? 'text-center' : ''}`}>
-      <Tag className={`text-3xl sm:text-4xl font-heading font-bold mb-4 ${light ? 'text-white' : 'text-navy-900'}`}>
+      <Tag className={`text-3xl sm:text-4xl font-heading font-bold mb-4 ${light ? 'text-white' : 'text-green-900'}`}>
         {title}
       </Tag>
       {subtitle && (
@@ -19,7 +19,7 @@ export function SectionHeading({ title, subtitle, centered = true, light = false
           {subtitle}
         </p>
       )}
-      <div className={`mt-4 mx-auto h-1 w-16 rounded-full ${centered ? '' : 'ml-0'} ${light ? 'bg-gold-400' : 'bg-gold-500'}`} />
+      <div className={`mt-4 mx-auto h-1 w-16 rounded-full ${centered ? '' : 'ml-0'} ${light ? 'bg-yellow-400' : 'bg-yellow-500'}`} />
     </AnimateOnScroll>
   )
 }

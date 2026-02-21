@@ -1,49 +1,31 @@
-import { Ship, Plane, FileCheck, Warehouse, Truck, Package } from 'lucide-react'
+import { Ship, Truck, Wrench } from 'lucide-react'
 import type { ComponentType } from 'react'
 
 export interface ServiceData {
   slug: string
   icon: ComponentType<{ className?: string; style?: React.CSSProperties }>
-  translationKey: 'ocean' | 'air' | 'customs' | 'warehousing' | 'land' | 'project'
+  translationKey: 'freightForwarding' | 'projectCargo' | 'mechanicalErection'
   processSteps: number
 }
 
 export const services: ServiceData[] = [
   {
-    slug: 'ocean-freight',
+    slug: 'freight-forwarding',
     icon: Ship,
-    translationKey: 'ocean',
+    translationKey: 'freightForwarding',
     processSteps: 5,
-  },
-  {
-    slug: 'air-freight',
-    icon: Plane,
-    translationKey: 'air',
-    processSteps: 4,
-  },
-  {
-    slug: 'customs-brokerage',
-    icon: FileCheck,
-    translationKey: 'customs',
-    processSteps: 5,
-  },
-  {
-    slug: 'warehousing',
-    icon: Warehouse,
-    translationKey: 'warehousing',
-    processSteps: 4,
-  },
-  {
-    slug: 'land-transport',
-    icon: Truck,
-    translationKey: 'land',
-    processSteps: 4,
   },
   {
     slug: 'project-cargo',
-    icon: Package,
-    translationKey: 'project',
+    icon: Truck,
+    translationKey: 'projectCargo',
     processSteps: 6,
+  },
+  {
+    slug: 'mechanical-erection',
+    icon: Wrench,
+    translationKey: 'mechanicalErection',
+    processSteps: 5,
   },
 ]
 

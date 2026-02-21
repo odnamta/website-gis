@@ -21,13 +21,13 @@ export function CareersContent() {
 
   return (
     <>
-      <section className="py-20 bg-navy-900">
+      <section className="py-20 bg-green-900">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center">
           <AnimateOnScroll>
             <h1 className="text-4xl sm:text-5xl font-heading font-bold text-white mb-4">
               {t.careers.pageTitle}
             </h1>
-            <p className="text-lg text-navy-300">{t.careers.pageSubtitle}</p>
+            <p className="text-lg text-green-300">{t.careers.pageSubtitle}</p>
           </AnimateOnScroll>
         </div>
       </section>
@@ -42,10 +42,10 @@ export function CareersContent() {
               return (
                 <AnimateOnScroll key={value.iconKey} delay={i * 0.1}>
                   <div className="text-center p-6 rounded-xl border border-slate-200 bg-white">
-                    <div className="w-14 h-14 mx-auto rounded-2xl bg-gold-50 flex items-center justify-center mb-4">
-                      <Icon className="w-7 h-7 text-gold-600" />
+                    <div className="w-14 h-14 mx-auto rounded-2xl bg-yellow-50 flex items-center justify-center mb-4">
+                      <Icon className="w-7 h-7 text-yellow-600" />
                     </div>
-                    <h3 className="font-heading font-semibold text-navy-900 mb-2">
+                    <h3 className="font-heading font-semibold text-green-900 mb-2">
                       {locale === 'id' ? value.titleId : value.titleEn}
                     </h3>
                     <p className="text-sm text-slate-500">
@@ -69,7 +69,7 @@ export function CareersContent() {
                 <div className="p-6 rounded-xl bg-white border border-slate-200 hover:shadow-md transition-shadow">
                   <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
                     <div>
-                      <h3 className="font-heading font-semibold text-navy-900 text-lg">
+                      <h3 className="font-heading font-semibold text-green-900 text-lg">
                         {locale === 'id' ? pos.titleId : pos.titleEn}
                       </h3>
                       <div className="flex flex-wrap items-center gap-3 mt-2">

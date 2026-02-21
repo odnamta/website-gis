@@ -24,7 +24,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     openGraph: {
       title: meta.title.en,
       description: meta.description.en,
-      url: `https://gls-id.com/services/${slug}`,
+      url: `https://gamaintisamudera.com/services/${slug}`,
       siteName: company.name,
       type: 'website',
     },
@@ -46,17 +46,17 @@ function ServiceJsonLd({ slug }: { slug: string }) {
     provider: {
       '@type': 'Organization',
       name: company.name,
-      url: 'https://gls-id.com',
+      url: 'https://gamaintisamudera.com',
       address: {
         '@type': 'PostalAddress',
-        streetAddress: company.address.street,
-        addressLocality: company.address.city,
-        addressRegion: company.address.province,
+        streetAddress: company.address,
+        addressLocality: 'Surabaya',
+        addressRegion: 'East Java',
         addressCountry: 'ID',
       },
     },
-    areaServed: 'Worldwide',
-    url: `https://gls-id.com/services/${slug}`,
+    areaServed: 'Indonesia',
+    url: `https://gamaintisamudera.com/services/${slug}`,
   }
 
   const faqSchema = faqs ? {
@@ -76,9 +76,9 @@ function ServiceJsonLd({ slug }: { slug: string }) {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
     itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://gls-id.com' },
-      { '@type': 'ListItem', position: 2, name: 'Services', item: 'https://gls-id.com/services' },
-      { '@type': 'ListItem', position: 3, name: meta.title.en, item: `https://gls-id.com/services/${slug}` },
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://gamaintisamudera.com' },
+      { '@type': 'ListItem', position: 2, name: 'Services', item: 'https://gamaintisamudera.com/services' },
+      { '@type': 'ListItem', position: 3, name: meta.title.en, item: `https://gamaintisamudera.com/services/${slug}` },
     ],
   }
 

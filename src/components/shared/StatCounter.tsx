@@ -49,7 +49,7 @@ export function StatCounter({ value, suffix = '', prefix = '', label, duration =
       transition={{ duration: 0.5 }}
       className="text-center"
     >
-      <div className="text-4xl sm:text-5xl font-heading font-bold text-gold-500">
+      <div className="text-4xl sm:text-5xl font-heading font-bold text-yellow-500">
         {prefix}{count.toLocaleString()}{suffix}
       </div>
       <div className="mt-2 text-sm text-slate-500 font-medium">{label}</div>

@@ -3,10 +3,10 @@ import { PageWrapper } from '@/components/layout/PageWrapper'
 import { PartnersContent } from '@/components/partners/PartnersContent'
 
 export const metadata: Metadata = {
-  title: 'Mitra',
-  description: 'Jaringan mitra PT Gama Lintas Samudera — shipping lines, agen internasional, dan asosiasi.',
+  title: 'Mitra & Klien',
+  description: 'Klien dan mitra PT Gama Intisamudera — perusahaan industri dan energi terkemuka.',
   alternates: { canonical: '/partners' },
-  openGraph: { title: 'Mitra — Gama Lintas Samudera', description: 'Jaringan global shipping lines, agen, dan asosiasi industri.' },
+  openGraph: { title: 'Mitra & Klien — PT Gama Intisamudera', description: 'Dipercaya oleh perusahaan industri dan energi terkemuka.' },
 }
 
 export default function Partners() {

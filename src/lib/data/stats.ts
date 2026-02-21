@@ -6,14 +6,14 @@ export interface Stat {
 
 const statLabels = {
   yearsExperience: true,
-  countriesServed: true,
-  shippingPartners: true,
-  clientSatisfaction: true,
+  totalStaff: true,
+  projectsCompleted: true,
+  coreServices: true,
 } as const
 
 export const stats: Stat[] = [
   { value: 30, suffix: '+', labelKey: 'yearsExperience' },
-  { value: 50, suffix: '+', labelKey: 'countriesServed' },
-  { value: 20, suffix: '+', labelKey: 'shippingPartners' },
-  { value: 100, suffix: '%', labelKey: 'clientSatisfaction' },
+  { value: 65, suffix: '+', labelKey: 'totalStaff' },
+  { value: 100, suffix: '+', labelKey: 'projectsCompleted' },
+  { value: 3, suffix: '', labelKey: 'coreServices' },
 ]

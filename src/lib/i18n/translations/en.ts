@@ -5,9 +5,10 @@ export const en: Translations = {
     home: 'Home',
     about: 'About Us',
     services: 'Services',
-    routes: 'Trade Routes',
-    track: 'Track Shipment',
-    caseStudies: 'Case Studies',
+    projects: 'Projects',
+    equipment: 'Equipment',
+    team: 'Our Team',
+    gallery: 'Gallery',
     news: 'News',
     careers: 'Careers',
     partners: 'Partners',
@@ -16,164 +17,95 @@ export const en: Translations = {
     getQuote: 'Get a Quote',
   },
   hero: {
-    title: 'Your Trusted Partner in International Freight Forwarding',
+    title: 'Professional, Proportional, Objective, and Nationalism',
     subtitle:
-      'PT Gama Lintas Samudera — the international arm of Gama Group — connects Indonesian businesses to the world with reliable ocean freight, air freight, and integrated logistics solutions, backed by 30+ years of logistics heritage.',
-    ctaQuote: 'Request a Quote',
+      'Gama Intisamudera brings together professional project logistics and heavy lift transportation services across Indonesia.',
+    ctaQuote: 'Contact Us',
     ctaServices: 'Explore Our Services',
     stats: {
-      yearsExperience: 'Years Group Heritage',
-      countriesServed: 'Countries Served',
-      shippingPartners: 'Shipping Partners',
-      clientSatisfaction: 'Service Commitment',
+      yearsExperience: 'Years Experience',
+      totalStaff: 'Total Staff',
+      projectsCompleted: 'Projects Completed',
+      coreServices: 'Core Services',
     },
   },
   services: {
     sectionTitle: 'Our Services',
     sectionSubtitle:
-      'End-to-end freight forwarding and logistics solutions tailored to your international trade needs.',
+      'Three integrated service pillars supporting your industrial and infrastructure projects from delivery to installation.',
     viewAll: 'View All Services',
-    ocean: {
-      title: 'Ocean Freight',
+    freightForwarding: {
+      title: 'Freight Forwarding',
       description:
-        'Full Container Load (FCL) and Less than Container Load (LCL) shipping across major global trade lanes. We negotiate competitive rates with leading shipping lines to ensure your cargo reaches its destination safely and on schedule.',
+        'Custom clearance and intra-insular shipping services across all regions of Indonesia, backed by an extensive logistics network and over 30 years of experience.',
       features: [
-        'FCL and LCL shipping worldwide',
-        'Competitive rates from major shipping lines',
-        'Door-to-door and port-to-port options',
-        'Reefer and special container handling',
-        'Real-time shipment tracking and visibility',
+        'Import and export custom clearance',
+        'Intra-insular shipping across Indonesia',
+        'Multi-modal coordination (sea, land)',
+        'Complete documentation and permit handling',
+        'Integrated land transport fleet',
       ],
       processSteps: [
-        { title: 'Consultation & Quote', description: 'Analyze your shipping needs and prepare the best rates from multiple shipping lines.' },
-        { title: 'Booking & Documentation', description: 'Book vessel space and prepare export/import documents including Bill of Lading, Packing List, and Invoice.' },
-        { title: 'Stuffing & Shipment', description: 'Professional cargo loading into containers and delivery to the port of origin.' },
-        { title: 'Transit Monitoring', description: 'Real-time tracking throughout the ocean voyage until arrival at the destination port.' },
-        { title: 'Customs & Last Mile', description: 'Customs clearance at destination and final delivery to the consignee\'s location.' },
+        { title: 'Consultation & Quote', description: 'Analyze your shipping needs and prepare the best offer based on route and cargo type.' },
+        { title: 'Documentation & Permits', description: 'Handle all customs documents, transport permits, and administrative requirements.' },
+        { title: 'Shipping & Coordination', description: 'Execute shipment with multi-modal coordination from origin to destination.' },
+        { title: 'Monitoring & Reporting', description: 'Track shipment status and provide regular updates to clients.' },
+        { title: 'Handover', description: 'Confirm cargo receipt at destination and complete documentation.' },
       ],
       benefits: [
-        { title: 'Cost Efficient', description: 'Competitive rates through direct partnerships with 20+ leading global shipping lines.' },
-        { title: 'Regular Schedules', description: 'Scheduled departures to 50+ countries ensure accurate supply chain planning.' },
-        { title: 'Full Visibility', description: 'Real-time container tracking from loading to final delivery.' },
+        { title: '30+ Years Experience', description: 'Extensive logistics network and trusted reputation in Indonesia\'s freight forwarding industry.' },
+        { title: 'Nationwide Coverage', description: 'Shipping to all 34 provinces across Indonesia including remote areas.' },
+        { title: 'Professional Custom Clearance', description: 'Experienced customs team ensures fast processing in full regulatory compliance.' },
       ],
     },
-    air: {
-      title: 'Air Freight',
-      description:
-        'Time-critical cargo demands speed and precision. Our air freight services provide express, consolidated, and charter solutions through established partnerships with international airlines and cargo carriers.',
-      features: [
-        'Express and consolidated air cargo',
-        'Airport-to-airport and door-to-door delivery',
-        'Dangerous goods and perishable handling',
-        'Charter services for oversized cargo',
-        'Priority booking for urgent shipments',
-      ],
-      processSteps: [
-        { title: 'Request & Consultation', description: 'Evaluate cargo type, weight, dimensions, and urgency to determine the best shipping option.' },
-        { title: 'Airline Booking', description: 'Book cargo space with partner airlines on optimal routes and schedules.' },
-        { title: 'Packing & Labeling', description: 'Package according to IATA standards and label cargo for flight safety.' },
-        { title: 'Shipment & Tracking', description: 'Hand over cargo at the airport and monitor in real-time until arrival.' },
-      ],
-      benefits: [
-        { title: 'Speed of Transit', description: 'Delivery in hours to days, ideal for time-sensitive cargo.' },
-        { title: 'High Security', description: 'Professional handling for high-value and sensitive goods.' },
-        { title: 'Flexibility', description: 'Express, standard, and charter options to match your urgency and budget.' },
-      ],
-    },
-    customs: {
-      title: 'Customs Brokerage',
-      description:
-        'Navigate the complexities of Indonesian import and export regulations with confidence. Our licensed customs brokers ensure smooth clearance, full regulatory compliance, and minimal delays at every port of entry.',
-      features: [
-        'Import and export customs clearance',
-        'Tariff classification and duty optimization',
-        'Regulatory compliance and documentation',
-        'Bonded warehouse and free trade zone facilitation',
-        'Government permits and special licensing',
-      ],
-      processSteps: [
-        { title: 'Document Review', description: 'Verify completeness and accuracy of all import/export documentation.' },
-        { title: 'Classification & Tariff', description: 'Determine correct HS Code and calculate applicable duties and taxes.' },
-        { title: 'Declaration Submission', description: 'Submit documents electronically through the CEISA Customs system.' },
-        { title: 'Physical Inspection', description: 'Assist with physical examination if required by Customs authorities.' },
-        { title: 'Release & Delivery', description: 'Cargo release from port/airport and coordinate delivery to final destination.' },
-      ],
-      benefits: [
-        { title: 'Regulatory Compliance', description: 'Licensed PPJK team ensures every process meets current Customs regulations.' },
-        { title: 'Fast Processing', description: 'Average 24-hour customs clearance for green channel shipments.' },
-        { title: 'Expert Guidance', description: 'Professional advice on HS Code classification and duty optimization.' },
-      ],
-    },
-    warehousing: {
-      title: 'Warehousing & Distribution',
-      description:
-        'Strategically located warehousing facilities in Surabaya provide secure storage, inventory management, and efficient distribution services to support your supply chain from arrival to final delivery.',
-      features: [
-        'Bonded and general warehousing',
-        'Inventory management and reporting',
-        'Pick, pack, and distribution services',
-        'Cross-docking for rapid turnaround',
-        'Temperature-controlled storage available',
-      ],
-      processSteps: [
-        { title: 'Goods Receipt', description: 'Inspect and record incoming goods against shipping documentation.' },
-        { title: 'Storage & Inventory', description: 'Place in appropriate storage areas and register in the WMS system.' },
-        { title: 'Stock Management', description: 'Real-time inventory monitoring, periodic stock counts, and automated reporting.' },
-        { title: 'Pick-Pack & Distribute', description: 'Process pick-pack orders and dispatch to final destination per client instructions.' },
-      ],
-      benefits: [
-        { title: 'Strategic Location', description: 'Located in Surabaya with direct access to major port and airport.' },
-        { title: 'Licensed Facility', description: 'Official bonded warehouse for deferred duty payments.' },
-        { title: 'Digital System', description: 'Cloud-based WMS for 24/7 real-time inventory visibility.' },
-      ],
-    },
-    land: {
-      title: 'Land Transport',
-      description:
-        'Comprehensive overland logistics across Java and the Indonesian archipelago. From container haulage to last-mile delivery, our fleet and trusted transport partners ensure your goods move efficiently over land.',
-      features: [
-        'Container trucking and haulage',
-        'Inter-island multimodal transport',
-        'Last-mile delivery services',
-        'GPS-tracked fleet management',
-        'Flatbed and specialized vehicle options',
-      ],
-      processSteps: [
-        { title: 'Route Planning', description: 'Analyze optimal routes based on location, cargo type, and delivery schedule.' },
-        { title: 'Fleet Scheduling', description: 'Assign the appropriate vehicle and coordinate with drivers.' },
-        { title: 'Loading & Departure', description: 'Supervised cargo loading and on-time departure.' },
-        { title: 'Tracking & Delivery', description: 'Real-time GPS monitoring until cargo arrives safely at destination.' },
-      ],
-      benefits: [
-        { title: 'Diverse Fleet', description: 'Full range of vehicles from semi-trailers to low-bed for special cargo.' },
-        { title: 'Wide Coverage', description: 'Delivery to all 34 provinces in Indonesia including inter-island service.' },
-        { title: 'Real-time Monitoring', description: 'Entire fleet GPS-equipped for 24/7 cargo position visibility.' },
-      ],
-    },
-    project: {
+    projectCargo: {
       title: 'Project Cargo',
       description:
-        'Heavy-lift, oversized, and complex project cargo require meticulous planning and execution. Our project logistics team manages every aspect, from route surveys and engineering to transport and installation support.',
+        'Handling of oversized and overweight project cargo, including stevedoring, inland & heavy transport, heavy lifting, jacking & skidding, and engineering.',
       features: [
-        'Heavy-lift and out-of-gauge cargo',
-        'Route surveys and feasibility studies',
-        'Specialized equipment and rigging',
-        'Multi-modal project logistics coordination',
-        'On-site supervision and installation support',
+        'Stevedoring — project cargo loading and unloading at ports',
+        'Inland & heavy transport — overland heavy cargo transport',
+        'Heavy lifting — heavy load lifting with cranes',
+        'Jacking & skidding — high-precision horizontal movement',
+        'Engineering — technical planning and load analysis',
       ],
       processSteps: [
-        { title: 'Survey & Consultation', description: 'On-site visit to evaluate dimensions, weight, and road access.' },
-        { title: 'Logistics Planning', description: 'Develop detailed transport plan including routes, permits, and schedules.' },
-        { title: 'Equipment Sourcing', description: 'Arrange cranes, special trailers, and heavy-lift equipment as needed.' },
-        { title: 'Transport Execution', description: 'Execute delivery with on-site supervision at every stage.' },
-        { title: 'Installation & Handover', description: 'Support installation and complete handover at project site.' },
-        { title: 'Documentation & Report', description: 'Complete reporting including photos, videos, and insurance documentation.' },
+        { title: 'Survey & Consultation', description: 'Site visit to evaluate dimensions, weight, road access, and field conditions.' },
+        { title: 'Engineering & Planning', description: 'Prepare method statements, load analysis, and detailed rigging plans.' },
+        { title: 'Equipment Mobilization', description: 'Prepare and ship cranes, special trailers, and heavy lift equipment to site.' },
+        { title: 'Stevedoring Execution', description: 'Load and unload cargo at ports using ship cranes or shore cranes.' },
+        { title: 'Heavy Transport & Lifting', description: 'Overland transport and cargo lifting to final position.' },
+        { title: 'Documentation & Report', description: 'Complete reporting including photos, videos, and safety documentation.' },
       ],
       benefits: [
-        { title: 'Project Experience', description: '100+ successful industrial projects backed by Gama Group\'s heritage.' },
-        { title: 'End-to-End Solution', description: 'From site survey to installation, one partner for the entire process.' },
-        { title: 'Safety Assured', description: 'All-risk insurance and zero incident record for your peace of mind.' },
-        { title: 'Expert Team', description: 'Seasoned professionals experienced in heavy-lift and oversized cargo.' },
+        { title: '100+ Successful Projects', description: 'Solid track record handling major industrial projects across various sectors.' },
+        { title: 'Zero Incident Record', description: 'Full commitment to work safety in every operation.' },
+        { title: 'End-to-End Solution', description: 'From port to project site, one partner for the entire process.' },
+        { title: '500 Ton Capacity', description: 'Capability to handle loads up to 500 tons with specialist equipment.' },
+      ],
+    },
+    mechanicalErection: {
+      title: 'Mechanical Erection & Assembling',
+      description:
+        'Erection, assembling, and engineering services for large industrial projects. Precision installation of plant equipment, steel structures, and machine components.',
+      features: [
+        'Erection — steel structure and industrial equipment installation',
+        'Assembling — machine and equipment component assembly',
+        'Engineering — technical planning and supervision',
+        'Commissioning support — equipment testing support',
+        'Alignment & leveling — high-precision installation',
+      ],
+      processSteps: [
+        { title: 'Technical Review', description: 'Evaluate technical drawings, specifications, and installation area conditions.' },
+        { title: 'Erection Planning', description: 'Prepare erection sequence, method statement, and execution schedule.' },
+        { title: 'Team & Equipment Mobilization', description: 'Deploy erection team and equipment to the project site.' },
+        { title: 'Erection Execution', description: 'Install and assemble components per technical specifications.' },
+        { title: 'Inspection & Handover', description: 'Quality inspection, alignment check, and handover to client.' },
+      ],
+      benefits: [
+        { title: 'Experienced Team', description: 'Expert erection and assembly professionals with 20+ years of industrial project experience.' },
+        { title: 'High Precision', description: 'Strict alignment and leveling standards to ensure optimal equipment performance.' },
+        { title: 'Multi-Sector', description: 'Experience in petrochemical, power generation, cement, and port infrastructure sectors.' },
       ],
     },
     detailPage: {
@@ -182,192 +114,181 @@ export const en: Translations = {
       benefits: 'Why Choose This Service',
       faq: 'Frequently Asked Questions',
       relatedServices: 'Related Services',
-      ctaTitle: 'Ready to Ship?',
+      ctaTitle: 'Need This Service?',
       ctaSubtitle:
-        'Contact our team today for a customized freight solution that fits your business needs.',
-      ctaButton: 'Get a Free Quote',
+        'Contact our team for consultation and the best offer tailored to your project needs.',
+      ctaButton: 'Contact Us Now',
     },
   },
   whyChooseUs: {
-    sectionTitle: 'Why Choose Gama Lintas Samudera',
+    sectionTitle: 'Why Choose Us',
     sectionSubtitle:
-      'Backed by Gama Group\'s 30+ years in Indonesian logistics, GLS brings proven expertise and deep industry connections to your international freight forwarding needs.',
+      'Backed by over 30 years of experience in heavy lift and project logistics, GIS delivers integrated solutions for your projects.',
     reasons: [
       {
-        title: 'Gama Group Heritage',
+        title: '30+ Years of Experience',
         description:
-          'Built on the foundation of Gama Group\'s 30+ years of logistics experience in Indonesia, offering the reliability and industry knowledge that only decades of proven performance can provide.',
+          'Established in 1995, PT Gama Intisamudera has proven its reliability and competence through hundreds of heavy lift projects across multiple industrial sectors.',
       },
       {
-        title: 'Global Network',
+        title: 'Zero Incident Record',
         description:
-          'Partnerships with 20+ leading shipping lines and agents across 50+ countries ensure seamless door-to-door logistics, no matter where your cargo needs to go.',
+          'Safety is our top priority. We are proud to maintain a zero incident record throughout our operations, supported by strict safety procedures in every project.',
       },
       {
-        title: 'Customs Expertise',
+        title: 'Integrated Solutions',
         description:
-          'Our PPJK-licensed customs brokers have deep knowledge of Indonesian trade regulations, ensuring fast clearance and full compliance for every shipment.',
+          'From freight forwarding to project cargo to mechanical erection — one partner to handle all your project logistics and installation needs.',
       },
       {
-        title: 'Tailored Solutions',
+        title: 'Professional Team',
         description:
-          'Every business is unique. We design flexible, cost-effective logistics solutions that adapt to your specific cargo requirements and trade routes.',
+          'Supported by 65+ experienced professionals in engineering, heavy lift operations, and project management to ensure every job is executed flawlessly.',
       },
     ],
   },
-  clients: {
-    sectionTitle: 'Our Shipping Line Partners',
+  partners: {
+    pageTitle: 'Our Partners & Clients',
+    pageSubtitle:
+      'PT Gama Intisamudera is trusted by leading companies in Indonesia and internationally.',
+    sectionTitle: 'Our Clients & Partners',
   },
   testimonials: {
-    sectionTitle: 'What Our Clients Say',
+    sectionTitle: 'Client Testimonials',
     sectionSubtitle:
-      'Hear from the businesses that rely on Gama Lintas Samudera for their international freight forwarding needs.',
+      'Hear directly from our clients about their experience working with PT Gama Intisamudera.',
   },
   latestNews: {
-    sectionTitle: 'Latest News & Insights',
+    sectionTitle: 'Latest News',
     sectionSubtitle:
-      'Stay up to date with the latest developments in international shipping, trade regulations, and company updates.',
+      'Stay updated with the latest projects, achievements, and company developments.',
     readMore: 'Read More',
     viewAll: 'View All News',
   },
   ctaBanner: {
-    title: 'Ready to Move Your Cargo Across the Globe?',
+    title: 'Have a Project That Needs Heavy Lift?',
     subtitle:
-      'Get a free, no-obligation quote from our freight forwarding experts. We will find the most efficient and cost-effective route for your shipment.',
-    buttonText: 'Request a Free Quote',
+      'Contact our team for consultation and a quotation. We are ready to support your project from planning to execution.',
+    buttonText: 'Contact Us Now',
   },
   about: {
-    pageTitle: 'About Gama Lintas Samudera',
+    pageTitle: 'About Us',
     pageSubtitle:
-      'The international arm of Gama Group — connecting Indonesia to the world through reliable and professional freight forwarding.',
+      'Get to know PT Gama Intisamudera — heavy lift and project logistics specialist since 1995.',
     storyTitle: 'Our Story',
     story: [
-      'Gama Group has been a trusted name in Indonesian logistics since 1995. For over three decades, our group has built a strong reputation in domestic shipping, customs brokerage, warehousing, and land transport — serving thousands of clients across diverse industries throughout the Indonesian archipelago.',
-      'In 2026, PT Gama Lintas Samudera (GLS) was established as Gama Group\'s dedicated international freight forwarding division, created to meet the growing global needs of our clients. With a foundation of 30+ years of logistics expertise, an extensive operational network, and a team of proven professionals, GLS is purpose-built to connect Indonesian businesses with international markets through reliable, comprehensive freight forwarding services.',
-      'Strategically located in Surabaya — one of Indonesia\'s largest trade hubs — GLS has direct access to Tanjung Perak Port and Juanda International Airport. Supported by partnerships with 20+ leading shipping lines and an agent network spanning 50+ countries, we are ready to be the bridge that connects your business to the world.',
+      'PT Gama Intisamudera was established in 1995 in Surabaya as a company specializing in heavy lift transportation and project logistics. From the beginning, the company has focused on handling oversized and overweight project cargo for industries across Indonesia.',
+      'Over three decades, GIS has built a strong reputation through the successful handling of over 100 major projects across various industrial sectors including petrochemicals, power generation, cement, mining, and port infrastructure. With the tagline "Professional, Proportional, Objective, and Nationalism," we are committed to delivering the best services for the advancement of Indonesian industry.',
+      'Strategically located in Surabaya with access to Tanjung Perak Port, GIS is supported by 65+ experienced professionals in engineering, heavy lift operations, and project management. Our three service pillars — Freight Forwarding, Project Cargo, and Mechanical Erection — provide integrated solutions from delivery to installation.',
     ],
     visionTitle: 'Our Vision',
     vision:
-      'To be Indonesia\'s leading international freight forwarding company, recognized for operational excellence, innovation, and the trust of our clients and partners worldwide.',
+      'To be Indonesia\'s leading heavy lift and project logistics company, recognized for professionalism, safety, and reliability.',
     missionTitle: 'Our Mission',
     missions: [
-      'Deliver reliable, efficient, and cost-effective international freight forwarding services that exceed client expectations.',
-      'Leverage Gama Group\'s 30+ years of logistics heritage and networks to provide trusted international shipping solutions.',
-      'Build and maintain a global network of trusted carriers, agents, and partners to ensure seamless connectivity across all trade lanes.',
-      'Invest in our people and technology to continuously improve service quality and adapt to the evolving needs of global trade.',
+      'Provide professional, safe, and timely heavy lift and project cargo services in accordance with international standards.',
+      'Develop engineering and technical competencies to deliver innovative solutions in every project.',
+      'Maintain a zero incident record through the implementation of strict work safety standards in every operation.',
+      'Contribute to Indonesian industrial development through reliable and trusted project logistics services.',
     ],
-    leadershipTitle: 'Our Leadership',
+    leadershipTitle: 'Leadership Team',
     leadershipSubtitle:
-      'Led by seasoned professionals with decades of combined experience in international logistics and freight forwarding.',
+      'Led by experienced professionals in the heavy lift and project logistics industry.',
     timelineTitle: 'Our Journey',
     certificationsTitle: 'Certifications & Memberships',
   },
-  routes: {
-    pageTitle: 'Trade Routes & Coverage',
+  projects: {
+    pageTitle: 'Our Projects',
     pageSubtitle:
-      'Comprehensive global coverage connecting Indonesia to major trade destinations across Asia, Europe, the Americas, Africa, and Oceania.',
-    coverageTitle: 'Global Coverage',
-    tradelanesTitle: 'Key Trade Lanes',
-    portsTitle: 'Port & Airport Connections',
-  },
-  track: {
-    pageTitle: 'Track Your Shipment',
-    pageSubtitle:
-      'Enter your tracking number or booking reference below to get real-time status updates on your cargo.',
-    formTitle: 'Shipment Tracking',
-    trackingNumber: 'Tracking Number / Booking Reference',
-    trackButton: 'Track Shipment',
-    inquiryTitle: 'Need Help Tracking Your Cargo?',
-    inquirySubtitle:
-      'If you are unable to locate your shipment or need additional information, our customer service team is here to assist you.',
-    inquiryButton: 'Contact Customer Service',
-  },
-  caseStudies: {
-    pageTitle: 'Case Studies',
-    pageSubtitle:
-      'See how Gama Lintas Samudera has solved complex logistics challenges for businesses across diverse industries.',
-    readMore: 'Read Full Case Study',
+      'See how GIS handles various heavy lift and project cargo operations across Indonesia.',
+    readMore: 'View Project Details',
     challenge: 'The Challenge',
     solution: 'Our Solution',
     results: 'The Results',
   },
+  equipment: {
+    pageTitle: 'Our Equipment',
+    pageSubtitle:
+      'Heavy lift and transportation equipment fleet that supports every project we undertake.',
+  },
+  team: {
+    pageTitle: 'Our Team',
+    pageSubtitle:
+      'Meet the professional team behind the success of every PT Gama Intisamudera project.',
+  },
+  gallery: {
+    pageTitle: 'Gallery',
+    pageSubtitle:
+      'Visual documentation of our heavy lift and project cargo operations.',
+  },
   news: {
     pageTitle: 'News & Updates',
     pageSubtitle:
-      'The latest from Gama Lintas Samudera — industry insights, regulatory updates, and company announcements.',
+      'Latest information about our projects, industry developments, and company activities.',
     readMore: 'Read More',
   },
   careers: {
-    pageTitle: 'Careers at Gama Lintas Samudera',
+    pageTitle: 'Careers at Gama Intisamudera',
     pageSubtitle:
-      'Join a dynamic team of logistics professionals and build your career in international freight forwarding.',
+      'Join our professional team and build a career in the heavy lift and project logistics industry.',
     cultureTitle: 'Our Culture',
     cultureSubtitle:
-      'We foster a collaborative, growth-oriented workplace where every team member plays a vital role in connecting Indonesia to the global marketplace.',
+      'At GIS, we prioritize professionalism, work safety, and the competence development of every team member.',
     positionsTitle: 'Open Positions',
     applyButton: 'Apply Now',
     noPositions:
-      'There are no open positions at this time. Please check back soon or send your resume to our HR team for future opportunities.',
-  },
-  partners: {
-    pageTitle: 'Our Partners',
-    pageSubtitle:
-      'Gama Lintas Samudera collaborates with a trusted network of shipping lines, airlines, agents, and industry associations worldwide.',
-    shippingLinesTitle: 'Shipping Line Partners',
-    agentNetworkTitle: 'Global Agent Network',
-    associationsTitle: 'Industry Associations',
+      'There are no open positions at this time. Please send your CV to our email for consideration in future opportunities.',
   },
   contact: {
     pageTitle: 'Contact Us',
     pageSubtitle:
-      'Have a question or need a freight quote? Reach out to our team — we are ready to help you move your cargo worldwide.',
+      'We are ready to assist with your project needs. Send us your inquiry or quotation request through the form below.',
     quoteForm: {
       title: 'Request a Quote',
-      origin: 'Origin (City / Port)',
-      destination: 'Destination (City / Port)',
+      origin: 'Origin Location',
+      destination: 'Destination Location',
       cargoType: 'Cargo Type',
-      weight: 'Estimated Weight (kg)',
+      weight: 'Estimated Weight (tons)',
       serviceType: 'Service Type',
       name: 'Full Name',
       email: 'Email Address',
       phone: 'Phone Number',
       company: 'Company Name',
-      message: 'Additional Details',
+      message: 'Project Details',
       submit: 'Submit Request',
       submitting: 'Submitting...',
       success:
-        'Thank you! Your quote request has been submitted. Our team will get back to you within 1 business day.',
+        'Thank you! Your quotation request has been submitted. Our team will get back to you within 1 business day.',
       error:
         'Something went wrong. Please try again or contact us directly by phone or email.',
     },
     info: {
       title: 'Contact Information',
-      address:
-        'Jl. Laksda M. Nasir 12 A, Surabaya, East Java, Indonesia',
-      phone: '+6282233181811',
-      email: 'info@gls-id.com',
+      address: 'Jl. Tanjung Priok No 12-12A, Surabaya, East Java, Indonesia',
+      phone: '031-3296003',
+      email: 'info@gama-group.co',
       hours: 'Monday - Friday: 08:00 - 17:00 WIB | Saturday: 08:00 - 12:00 WIB',
     },
   },
   faq: {
     pageTitle: 'Frequently Asked Questions',
     pageSubtitle:
-      'Find answers to common questions about our freight forwarding services, shipping processes, and customs procedures.',
+      'Find answers to common questions about our heavy lift, project cargo, and project logistics services.',
     categories: {
       general: 'General',
-      shipping: 'Shipping & Delivery',
-      customs: 'Customs & Documentation',
-      pricing: 'Pricing & Payment',
+      'heavy-lift': 'Heavy Lift',
+      'project-cargo': 'Project Cargo',
+      pricing: 'Pricing & Costs',
     },
   },
   footer: {
     companyDescription:
-      'PT Gama Lintas Samudera is the international freight forwarding arm of Gama Group, based in Surabaya, Indonesia. Backed by 30+ years of logistics heritage, we provide reliable ocean freight, air freight, customs brokerage, and integrated logistics solutions.',
+      'PT Gama Intisamudera is a heavy lift and project logistics company based in Surabaya, operating since 1995. Specializing in freight forwarding, project cargo handling, and mechanical erection for industrial projects across Indonesia.',
     quickLinks: 'Quick Links',
     services: 'Services',
     contact: 'Contact Us',
     copyright:
-      '\u00A9 {year} PT Gama Lintas Samudera. All rights reserved.',
+      '\u00A9 {year} PT Gama Intisamudera. All rights reserved.',
     newsletter: {
       title: 'Stay Informed',
       placeholder: 'Enter your email address',

@@ -1,32 +1,19 @@
 export interface Partner {
   name: string
-  category: 'shipping-line' | 'agent' | 'association'
+  category: 'client' | 'partner'
   descriptionId?: string
   descriptionEn?: string
 }
 
-export const shippingLines: Partner[] = [
-  { name: 'Maersk', category: 'shipping-line' },
-  { name: 'MSC', category: 'shipping-line' },
-  { name: 'CMA CGM', category: 'shipping-line' },
-  { name: 'Hapag-Lloyd', category: 'shipping-line' },
-  { name: 'ONE (Ocean Network Express)', category: 'shipping-line' },
-  { name: 'Evergreen', category: 'shipping-line' },
-  { name: 'Yang Ming', category: 'shipping-line' },
-  { name: 'COSCO Shipping', category: 'shipping-line' },
-]
-
-export const agentNetwork: Partner[] = [
-  { name: 'Singapore Agent Network', category: 'agent', descriptionId: 'Mitra agen di Singapura', descriptionEn: 'Partner agents in Singapore' },
-  { name: 'China Freight Partners', category: 'agent', descriptionId: 'Jaringan agen di seluruh Tiongkok', descriptionEn: 'Agent network across China' },
-  { name: 'Japan Logistics Alliance', category: 'agent', descriptionId: 'Aliansi logistik di Jepang', descriptionEn: 'Logistics alliance in Japan' },
-  { name: 'India Forwarding Group', category: 'agent', descriptionId: 'Grup freight forwarding di India', descriptionEn: 'Freight forwarding group in India' },
-  { name: 'European Freight Network', category: 'agent', descriptionId: 'Jaringan freight di Eropa', descriptionEn: 'Freight network in Europe' },
-]
-
-export const associations: Partner[] = [
-  { name: 'FIATA', category: 'association', descriptionId: 'Federasi Internasional Asosiasi Freight Forwarder', descriptionEn: 'International Federation of Freight Forwarders Associations' },
-  { name: 'IATA', category: 'association', descriptionId: 'Asosiasi Transportasi Udara Internasional', descriptionEn: 'International Air Transport Association' },
-  { name: 'INSA', category: 'association', descriptionId: 'Asosiasi Pemilik Kapal Indonesia', descriptionEn: 'Indonesian National Shipowners Association' },
-  { name: 'GAFEKSI', category: 'association', descriptionId: 'Gabungan Forwarder dan Ekspedisi Indonesia', descriptionEn: 'Indonesian Forwarders and Expeditors Association' },
+export const partners: Partner[] = [
+  { name: 'COSCO', category: 'partner', descriptionId: 'Perusahaan pelayaran dan logistik global', descriptionEn: 'Global shipping and logistics company' },
+  { name: 'Pelindo', category: 'client', descriptionId: 'Pengelola pelabuhan Indonesia', descriptionEn: 'Indonesian port authority' },
+  { name: 'Schlumberger', category: 'client', descriptionId: 'Perusahaan jasa ladang minyak', descriptionEn: 'Oilfield services company' },
+  { name: 'Pertamina', category: 'client', descriptionId: 'Perusahaan energi nasional Indonesia', descriptionEn: 'Indonesian national energy company' },
+  { name: 'Bollore', category: 'partner', descriptionId: 'Grup logistik dan transportasi internasional', descriptionEn: 'International logistics and transportation group' },
+  { name: 'PP (Pembangunan Perumahan)', category: 'client', descriptionId: 'Perusahaan konstruksi BUMN', descriptionEn: 'State-owned construction company' },
+  { name: 'Rekayasa Industri', category: 'client', descriptionId: 'Perusahaan EPC nasional', descriptionEn: 'National EPC company' },
+  { name: 'INKA', category: 'client', descriptionId: 'Industri kereta api Indonesia', descriptionEn: 'Indonesian railway industry' },
+  { name: 'Krakatau Steel', category: 'client', descriptionId: 'Produsen baja terbesar di Indonesia', descriptionEn: 'Largest steel producer in Indonesia' },
+  { name: 'Wartsila', category: 'client', descriptionId: 'Perusahaan teknologi kelautan dan energi', descriptionEn: 'Marine and energy technology company' },
 ]

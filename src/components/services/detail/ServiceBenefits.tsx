@@ -17,9 +17,9 @@ export function ServiceBenefits({ service }: ServiceBenefitsProps) {
   const stats = serviceStats[service.slug as keyof typeof serviceStats]
 
   return (
-    <section className="py-20 bg-navy-900 relative overflow-hidden">
+    <section className="py-20 bg-green-900 relative overflow-hidden">
       <div className="absolute inset-0 opacity-10 pointer-events-none">
-        <div className="absolute top-0 right-0 w-96 h-96 bg-gold-500 rounded-full translate-x-1/2 -translate-y-1/2 blur-3xl" />
+        <div className="absolute top-0 right-0 w-96 h-96 bg-yellow-500 rounded-full translate-x-1/2 -translate-y-1/2 blur-3xl" />
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
@@ -45,7 +45,7 @@ export function ServiceBenefits({ service }: ServiceBenefitsProps) {
             <AnimateOnScroll key={i} delay={i * 0.08}>
               <div className="p-6 rounded-xl bg-white/5 border border-white/10 backdrop-blur-sm">
                 <h3 className="font-heading font-semibold text-white mb-2">{benefit.title}</h3>
-                <p className="text-sm text-navy-300 leading-relaxed">{benefit.description}</p>
+                <p className="text-sm text-green-300 leading-relaxed">{benefit.description}</p>
               </div>
             </AnimateOnScroll>
           ))}

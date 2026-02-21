@@ -4,8 +4,8 @@ interface BadgeProps {
 }
 
 const variantClasses = {
-  default: 'bg-navy-50 text-navy-700',
-  accent: 'bg-gold-50 text-gold-700',
+  default: 'bg-green-50 text-green-700',
+  accent: 'bg-yellow-50 text-yellow-700',
   outline: 'border border-slate-300 text-slate-600',
 }
 

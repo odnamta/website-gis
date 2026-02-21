@@ -4,9 +4,9 @@ import { ContactContent } from '@/components/contact/ContactContent'
 
 export const metadata: Metadata = {
   title: 'Kontak & Penawaran',
-  description: 'Hubungi PT Gama Lintas Samudera untuk penawaran freight forwarding internasional.',
+  description: 'Hubungi PT Gama Intisamudera untuk konsultasi dan penawaran proyek heavy lift.',
   alternates: { canonical: '/contact' },
-  openGraph: { title: 'Kontak — Gama Lintas Samudera', description: 'Minta penawaran freight forwarding dari Surabaya ke seluruh dunia.' },
+  openGraph: { title: 'Kontak — PT Gama Intisamudera', description: 'Hubungi kami untuk konsultasi dan penawaran proyek.' },
 }
 
 export default function Contact() {

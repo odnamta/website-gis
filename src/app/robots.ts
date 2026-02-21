@@ -8,6 +8,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: '*',
       allow: '/',
     },
-    sitemap: 'https://gls-id.com/sitemap.xml',
+    sitemap: 'https://gamaintisamudera.com/sitemap.xml',
   }
 }

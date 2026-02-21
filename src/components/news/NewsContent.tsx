@@ -13,13 +13,13 @@ export function NewsContent() {
 
   return (
     <>
-      <section className="py-20 bg-navy-900">
+      <section className="py-20 bg-green-900">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center">
           <AnimateOnScroll>
             <h1 className="text-4xl sm:text-5xl font-heading font-bold text-white mb-4">
               {t.news.pageTitle}
             </h1>
-            <p className="text-lg text-navy-300">{t.news.pageSubtitle}</p>
+            <p className="text-lg text-green-300">{t.news.pageSubtitle}</p>
           </AnimateOnScroll>
         </div>
       </section>
@@ -43,7 +43,7 @@ export function NewsContent() {
                         })}
                       </div>
                     </div>
-                    <h3 className="font-heading font-semibold text-navy-900 mb-2">
+                    <h3 className="font-heading font-semibold text-green-900 mb-2">
                       {locale === 'id' ? item.titleId : item.titleEn}
                     </h3>
                     <p className="text-sm text-slate-500 line-clamp-3">

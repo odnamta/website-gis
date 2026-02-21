@@ -31,7 +31,7 @@ export function Navbar() {
     { key: 'home', href: '/', label: t.nav.home },
     { key: 'about', href: '/about', label: t.nav.about },
     { key: 'services', href: '/services', label: t.nav.services, hasChildren: true },
-    { key: 'routes', href: '/routes', label: t.nav.routes },
+    { key: 'projects', href: '/projects', label: t.nav.projects },
     { key: 'partners', href: '/partners', label: t.nav.partners },
     { key: 'contact', href: '/contact', label: t.nav.contact },
   ]
@@ -53,18 +53,18 @@ export function Navbar() {
           <Link href="/" className="flex items-center gap-2.5 flex-shrink-0">
             <Image
               src="/logo.png"
-              alt="GLS Logo"
+              alt="GIS Logo"
               width={40}
               height={40}
               className="w-10 h-10 object-contain"
               priority
             />
             <div className="hidden sm:block">
-              <div className="text-navy-900 font-heading font-bold text-sm leading-tight">
-                Gama Lintas
+              <div className="text-green-900 font-heading font-bold text-sm leading-tight">
+                Gama
               </div>
-              <div className="text-navy-900 font-heading font-bold text-sm leading-tight">
-                Samudera
+              <div className="text-green-900 font-heading font-bold text-sm leading-tight">
+                Intisamudera
               </div>
             </div>
           </Link>
@@ -83,8 +83,8 @@ export function Navbar() {
                     href={link.href}
                     className={`flex items-center gap-1 px-3 py-2 rounded-lg text-sm font-medium transition-colors ${
                       isActive(link.href)
-                        ? 'text-gold-600 bg-gold-50'
-                        : 'text-slate-600 hover:text-navy-900 hover:bg-slate-50'
+                        ? 'text-yellow-600 bg-yellow-50'
+                        : 'text-slate-600 hover:text-green-900 hover:bg-slate-50'
                     }`}
                   >
                     {link.label}
@@ -100,8 +100,8 @@ export function Navbar() {
                   href={link.href}
                   className={`px-3 py-2 rounded-lg text-sm font-medium transition-colors ${
                     isActive(link.href)
-                      ? 'text-gold-600 bg-gold-50'
-                      : 'text-slate-600 hover:text-navy-900 hover:bg-slate-50'
+                      ? 'text-yellow-600 bg-yellow-50'
+                      : 'text-slate-600 hover:text-green-900 hover:bg-slate-50'
                   }`}
                 >
                   {link.label}
@@ -114,7 +114,7 @@ export function Navbar() {
           <div className="flex items-center gap-2">
             <button
               onClick={toggleLanguage}
-              className="flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg text-sm font-medium text-slate-500 hover:text-navy-900 hover:bg-slate-50 transition-colors"
+              className="flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg text-sm font-medium text-slate-500 hover:text-green-900 hover:bg-slate-50 transition-colors"
               aria-label={`Switch to ${locale === 'id' ? 'English' : 'Indonesian'}`}
             >
               <Globe className="w-4 h-4" />
@@ -122,7 +122,7 @@ export function Navbar() {
             </button>
             <Link
               href="/contact"
-              className="hidden lg:inline-flex items-center px-4 py-2 rounded-lg text-sm font-semibold bg-gold-500 text-navy-900 hover:bg-gold-400 transition-colors"
+              className="hidden lg:inline-flex items-center px-4 py-2 rounded-lg text-sm font-semibold bg-yellow-500 text-green-900 hover:bg-yellow-400 transition-colors"
             >
               {t.nav.getQuote}
             </Link>
@@ -159,8 +159,8 @@ export function Navbar() {
                     href={link.href}
                     className={`block px-3 py-2.5 rounded-lg text-sm font-medium transition-colors ${
                       isActive(link.href)
-                        ? 'text-gold-600 bg-gold-50'
-                        : 'text-slate-600 hover:text-navy-900 hover:bg-slate-50'
+                        ? 'text-yellow-600 bg-yellow-50'
+                        : 'text-slate-600 hover:text-green-900 hover:bg-slate-50'
                     }`}
                   >
                     {link.label}
@@ -168,17 +168,14 @@ export function Navbar() {
                   {link.hasChildren && (
                     <div className="ml-4 mt-1 space-y-0.5">
                       {[
-                        { label: t.services.ocean.title, href: '/services/ocean-freight' },
-                        { label: t.services.air.title, href: '/services/air-freight' },
-                        { label: t.services.customs.title, href: '/services/customs-brokerage' },
-                        { label: t.services.warehousing.title, href: '/services/warehousing' },
-                        { label: t.services.land.title, href: '/services/land-transport' },
-                        { label: t.services.project.title, href: '/services/project-cargo' },
+                        { label: t.services.freightForwarding.title, href: '/services/freight-forwarding' },
+                        { label: t.services.projectCargo.title, href: '/services/project-cargo' },
+                        { label: t.services.mechanicalErection.title, href: '/services/mechanical-erection' },
                       ].map((sub) => (
                         <Link
                           key={sub.href}
                           href={sub.href}
-                          className="block px-3 py-2 rounded-lg text-sm text-slate-500 hover:text-navy-900 hover:bg-slate-50 transition-colors"
+                          className="block px-3 py-2 rounded-lg text-sm text-slate-500 hover:text-green-900 hover:bg-slate-50 transition-colors"
                         >
                           {sub.label}
                         </Link>
@@ -190,7 +187,7 @@ export function Navbar() {
               <div className="pt-3 border-t border-slate-100">
                 <Link
                   href="/contact"
-                  className="block text-center px-4 py-2.5 rounded-lg text-sm font-semibold bg-gold-500 text-navy-900 hover:bg-gold-400 transition-colors"
+                  className="block text-center px-4 py-2.5 rounded-lg text-sm font-semibold bg-yellow-500 text-green-900 hover:bg-yellow-400 transition-colors"
                 >
                   {t.nav.getQuote}
                 </Link>

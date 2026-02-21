@@ -18,8 +18,8 @@ export default function Error({
   return (
     <div className="min-h-screen flex items-center justify-center px-4">
       <div className="text-center">
-        <AlertTriangle className="w-16 h-16 text-gold-400 mx-auto mb-6" aria-hidden="true" />
-        <h1 className="text-4xl font-heading font-bold text-navy-900 mb-4">
+        <AlertTriangle className="w-16 h-16 text-yellow-400 mx-auto mb-6" aria-hidden="true" />
+        <h1 className="text-4xl font-heading font-bold text-green-900 mb-4">
           Terjadi Kesalahan
         </h1>
         <p className="text-slate-500 mb-8">

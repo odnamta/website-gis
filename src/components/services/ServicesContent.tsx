@@ -13,13 +13,13 @@ export function ServicesContent() {
   return (
     <>
       {/* Header */}
-      <section className="py-20 bg-navy-900">
+      <section className="py-20 bg-green-900">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center">
           <AnimateOnScroll>
             <h1 className="text-4xl sm:text-5xl font-heading font-bold text-white mb-4">
               {t.services.sectionTitle}
             </h1>
-            <p className="text-lg text-navy-300">{t.services.sectionSubtitle}</p>
+            <p className="text-lg text-green-300">{t.services.sectionSubtitle}</p>
           </AnimateOnScroll>
         </div>
       </section>

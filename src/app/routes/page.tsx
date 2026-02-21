@@ -4,9 +4,9 @@ import { RoutesContent } from '@/components/routes/RoutesContent'
 
 export const metadata: Metadata = {
   title: 'Rute & Jangkauan',
-  description: 'Rute pengiriman internasional PT Gama Lintas Samudera ke 50+ negara.',
+  description: 'Jangkauan pengiriman PT Gama Intisamudera di seluruh Indonesia.',
   alternates: { canonical: '/routes' },
-  openGraph: { title: 'Rute & Jangkauan — Gama Lintas Samudera', description: 'Jaringan rute pengiriman ke 50+ negara di seluruh dunia.' },
+  openGraph: { title: 'Rute & Jangkauan — PT Gama Intisamudera', description: 'Jangkauan pengiriman di seluruh Indonesia.' },
 }
 
 export default function Routes() {

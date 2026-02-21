@@ -11,8 +11,8 @@ function NotFoundContent() {
   return (
     <div className="min-h-[60vh] flex items-center justify-center px-4">
       <div className="text-center">
-        <Ship className="w-16 h-16 text-navy-200 mx-auto mb-6" aria-hidden="true" />
-        <h1 className="text-6xl font-heading font-bold text-navy-900 mb-4">404</h1>
+        <Ship className="w-16 h-16 text-green-200 mx-auto mb-6" aria-hidden="true" />
+        <h1 className="text-6xl font-heading font-bold text-green-900 mb-4">404</h1>
         <p className="text-lg text-slate-500 mb-8">{t.notFound.subtitle}</p>
         <Button href="/">{t.notFound.backHome}</Button>
       </div>

@@ -1,13 +1,22 @@
 export type Locale = 'id' | 'en'
 
+interface ServiceContent {
+  title: string
+  description: string
+  features: string[]
+  processSteps: { title: string; description: string }[]
+  benefits: { title: string; description: string }[]
+}
+
 export interface Translations {
   nav: {
     home: string
     about: string
     services: string
-    routes: string
-    track: string
-    caseStudies: string
+    projects: string
+    equipment: string
+    team: string
+    gallery: string
     news: string
     careers: string
     partners: string
@@ -22,21 +31,18 @@ export interface Translations {
     ctaServices: string
     stats: {
       yearsExperience: string
-      countriesServed: string
-      shippingPartners: string
-      clientSatisfaction: string
+      totalStaff: string
+      projectsCompleted: string
+      coreServices: string
     }
   }
   services: {
     sectionTitle: string
     sectionSubtitle: string
     viewAll: string
-    ocean: { title: string; description: string; features: string[]; processSteps: { title: string; description: string }[]; benefits: { title: string; description: string }[] }
-    air: { title: string; description: string; features: string[]; processSteps: { title: string; description: string }[]; benefits: { title: string; description: string }[] }
-    customs: { title: string; description: string; features: string[]; processSteps: { title: string; description: string }[]; benefits: { title: string; description: string }[] }
-    warehousing: { title: string; description: string; features: string[]; processSteps: { title: string; description: string }[]; benefits: { title: string; description: string }[] }
-    land: { title: string; description: string; features: string[]; processSteps: { title: string; description: string }[]; benefits: { title: string; description: string }[] }
-    project: { title: string; description: string; features: string[]; processSteps: { title: string; description: string }[]; benefits: { title: string; description: string }[] }
+    freightForwarding: ServiceContent
+    projectCargo: ServiceContent
+    mechanicalErection: ServiceContent
     detailPage: {
       features: string
       process: string
@@ -53,7 +59,9 @@ export interface Translations {
     sectionSubtitle: string
     reasons: Array<{ title: string; description: string }>
   }
-  clients: {
+  partners: {
+    pageTitle: string
+    pageSubtitle: string
     sectionTitle: string
   }
   testimonials: {
@@ -85,30 +93,25 @@ export interface Translations {
     timelineTitle: string
     certificationsTitle: string
   }
-  routes: {
-    pageTitle: string
-    pageSubtitle: string
-    coverageTitle: string
-    tradelanesTitle: string
-    portsTitle: string
-  }
-  track: {
-    pageTitle: string
-    pageSubtitle: string
-    formTitle: string
-    trackingNumber: string
-    trackButton: string
-    inquiryTitle: string
-    inquirySubtitle: string
-    inquiryButton: string
-  }
-  caseStudies: {
+  projects: {
     pageTitle: string
     pageSubtitle: string
     readMore: string
     challenge: string
     solution: string
     results: string
+  }
+  equipment: {
+    pageTitle: string
+    pageSubtitle: string
+  }
+  team: {
+    pageTitle: string
+    pageSubtitle: string
+  }
+  gallery: {
+    pageTitle: string
+    pageSubtitle: string
   }
   news: {
     pageTitle: string
@@ -123,13 +126,6 @@ export interface Translations {
     positionsTitle: string
     applyButton: string
     noPositions: string
-  }
-  partners: {
-    pageTitle: string
-    pageSubtitle: string
-    shippingLinesTitle: string
-    agentNetworkTitle: string
-    associationsTitle: string
   }
   contact: {
     pageTitle: string
@@ -164,8 +160,8 @@ export interface Translations {
     pageSubtitle: string
     categories: {
       general: string
-      shipping: string
-      customs: string
+      'heavy-lift': string
+      'project-cargo': string
       pricing: string
     }
   }

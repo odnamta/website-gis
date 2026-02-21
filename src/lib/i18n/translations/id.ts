@@ -5,9 +5,10 @@ export const id: Translations = {
     home: 'Beranda',
     about: 'Tentang Kami',
     services: 'Layanan',
-    routes: 'Rute & Jaringan',
-    track: 'Lacak Kiriman',
-    caseStudies: 'Studi Kasus',
+    projects: 'Proyek',
+    equipment: 'Peralatan',
+    team: 'Tim Kami',
+    gallery: 'Galeri',
     news: 'Berita',
     careers: 'Karir',
     partners: 'Mitra',
@@ -16,164 +17,95 @@ export const id: Translations = {
     getQuote: 'Minta Penawaran',
   },
   hero: {
-    title: 'Solusi Pengiriman Internasional Terpercaya',
+    title: 'Professional, Proportional, Objective, and Nationalism',
     subtitle:
-      'PT Gama Lintas Samudera — divisi internasional Gama Group — menghubungkan bisnis Anda ke seluruh dunia melalui layanan freight forwarding yang andal, efisien, dan profesional, didukung pengalaman 30+ tahun di industri logistik.',
-    ctaQuote: 'Dapatkan Penawaran Gratis',
+      'Gama Intisamudera menghadirkan layanan project logistics dan transportasi heavy lift yang profesional di seluruh Indonesia.',
+    ctaQuote: 'Hubungi Kami',
     ctaServices: 'Jelajahi Layanan Kami',
     stats: {
-      yearsExperience: 'Tahun Pengalaman Grup',
-      countriesServed: 'Negara Tujuan',
-      shippingPartners: 'Mitra Pelayaran',
-      clientSatisfaction: 'Komitmen Layanan',
+      yearsExperience: 'Tahun Pengalaman',
+      totalStaff: 'Total Karyawan',
+      projectsCompleted: 'Proyek Selesai',
+      coreServices: 'Pilar Layanan',
     },
   },
   services: {
     sectionTitle: 'Layanan Kami',
     sectionSubtitle:
-      'Kami menyediakan solusi logistik menyeluruh untuk memenuhi kebutuhan pengiriman internasional Anda, dari laut hingga darat.',
+      'Tiga pilar layanan terintegrasi untuk mendukung proyek industri dan infrastruktur Anda dari pengiriman hingga pemasangan.',
     viewAll: 'Lihat Semua Layanan',
-    ocean: {
-      title: 'Pengiriman Laut (Ocean Freight)',
+    freightForwarding: {
+      title: 'Freight Forwarding',
       description:
-        'Layanan pengiriman laut FCL dan LCL ke berbagai pelabuhan utama di seluruh dunia dengan harga kompetitif dan jadwal keberangkatan rutin.',
+        'Layanan custom clearance dan pengiriman intra-insular ke seluruh wilayah Indonesia, didukung jaringan logistik yang luas dan pengalaman lebih dari 30 tahun.',
       features: [
-        'Full Container Load (FCL) dan Less Container Load (LCL)',
-        'Jadwal keberangkatan reguler ke 50+ negara',
-        'Penanganan kargo berbahaya (dangerous goods) bersertifikasi',
-        'Pelacakan kontainer secara real-time',
-        'Konsolidasi kargo untuk efisiensi biaya',
+        'Custom clearance (kepabeanan) impor dan ekspor',
+        'Pengiriman intra-insular ke seluruh Indonesia',
+        'Koordinasi multi-moda (laut, darat)',
+        'Pengurusan dokumen dan perizinan lengkap',
+        'Armada transportasi darat terintegrasi',
       ],
       processSteps: [
-        { title: 'Konsultasi & Penawaran', description: 'Analisis kebutuhan pengiriman Anda dan penyusunan penawaran harga terbaik dari berbagai shipping line.' },
-        { title: 'Booking & Dokumentasi', description: 'Pemesanan ruang kapal dan penyiapan dokumen ekspor/impor seperti Bill of Lading, Packing List, dan Invoice.' },
-        { title: 'Stuffing & Pengiriman', description: 'Pemuatan kargo ke kontainer dengan supervisi profesional dan pengiriman ke pelabuhan asal.' },
-        { title: 'Pemantauan Transit', description: 'Pelacakan real-time selama perjalanan laut hingga tiba di pelabuhan tujuan.' },
-        { title: 'Customs & Pengiriman Akhir', description: 'Proses kepabeanan di negara tujuan dan pengiriman kargo hingga ke lokasi penerima.' },
+        { title: 'Konsultasi & Penawaran', description: 'Analisis kebutuhan pengiriman Anda dan penyusunan penawaran terbaik sesuai rute dan jenis kargo.' },
+        { title: 'Dokumentasi & Perizinan', description: 'Pengurusan seluruh dokumen kepabeanan, izin angkut, dan persyaratan administrasi.' },
+        { title: 'Pengiriman & Koordinasi', description: 'Eksekusi pengiriman dengan koordinasi multi-moda dari titik asal ke tujuan.' },
+        { title: 'Pemantauan & Pelaporan', description: 'Pemantauan status pengiriman dan pelaporan berkala kepada klien.' },
+        { title: 'Serah Terima', description: 'Konfirmasi penerimaan kargo di tujuan dan dokumentasi selesai.' },
       ],
       benefits: [
-        { title: 'Biaya Efisien', description: 'Tarif kompetitif melalui kemitraan langsung dengan 20+ shipping line terkemuka dunia.' },
-        { title: 'Jadwal Reguler', description: 'Keberangkatan terjadwal ke 50+ negara memastikan perencanaan supply chain yang akurat.' },
-        { title: 'Visibilitas Penuh', description: 'Pelacakan kontainer real-time dari pemuatan hingga pengiriman akhir.' },
+        { title: 'Pengalaman 30+ Tahun', description: 'Jaringan logistik yang luas dan reputasi terpercaya di industri freight forwarding Indonesia.' },
+        { title: 'Jangkauan Nasional', description: 'Pengiriman ke 34 provinsi di seluruh Indonesia termasuk daerah terpencil.' },
+        { title: 'Custom Clearance Profesional', description: 'Tim kepabeanan berpengalaman memastikan proses yang cepat dan sesuai regulasi.' },
       ],
     },
-    air: {
-      title: 'Pengiriman Udara (Air Freight)',
+    projectCargo: {
+      title: 'Project Cargo',
       description:
-        'Solusi pengiriman udara cepat dan aman untuk kargo yang memerlukan waktu transit singkat, didukung jaringan maskapai global.',
+        'Penanganan kargo proyek berdimensi besar dan berat berlebih, meliputi stevedoring, inland & heavy transport, heavy lifting, jacking & skidding, serta engineering.',
       features: [
-        'Layanan ekspres dan standar sesuai kebutuhan',
-        'Charter pesawat untuk kargo khusus dan proyek besar',
-        'Penanganan kargo bernilai tinggi dan sensitif waktu',
-        'Konsolidasi udara untuk optimalisasi biaya',
-        'Door-to-door dan airport-to-airport service',
+        'Stevedoring — bongkar muat kargo proyek di pelabuhan',
+        'Inland & heavy transport — pengangkutan darat kargo berat',
+        'Heavy lifting — pengangkatan beban berat dengan crane',
+        'Jacking & skidding — pemindahan horizontal presisi tinggi',
+        'Engineering — perencanaan teknis dan analisis beban',
       ],
       processSteps: [
-        { title: 'Permintaan & Konsultasi', description: 'Evaluasi jenis kargo, berat, dimensi, dan urgensi untuk menentukan opsi pengiriman terbaik.' },
-        { title: 'Booking Maskapai', description: 'Pemesanan ruang kargo pada maskapai partner dengan rute dan jadwal optimal.' },
-        { title: 'Pengepakan & Labeling', description: 'Pengemasan sesuai standar IATA dan pelabelan kargo untuk keamanan selama penerbangan.' },
-        { title: 'Pengiriman & Tracking', description: 'Penyerahan kargo ke bandara dan pemantauan real-time hingga tiba di tujuan.' },
+        { title: 'Survei & Konsultasi', description: 'Kunjungan lokasi untuk evaluasi dimensi, berat, akses jalan, dan kondisi lapangan.' },
+        { title: 'Engineering & Perencanaan', description: 'Penyusunan method statement, analisis beban, dan rencana rigging detail.' },
+        { title: 'Mobilisasi Peralatan', description: 'Persiapan dan pengiriman crane, trailer khusus, dan peralatan heavy lift ke lokasi.' },
+        { title: 'Eksekusi Stevedoring', description: 'Bongkar muat kargo di pelabuhan dengan crane kapal atau crane darat.' },
+        { title: 'Heavy Transport & Lifting', description: 'Pengangkutan darat dan pengangkatan kargo ke posisi akhir.' },
+        { title: 'Dokumentasi & Laporan', description: 'Pelaporan lengkap termasuk foto, video, dan dokumentasi keselamatan.' },
       ],
       benefits: [
-        { title: 'Kecepatan Transit', description: 'Pengiriman dalam hitungan jam hingga hari, ideal untuk kargo sensitif waktu.' },
-        { title: 'Keamanan Tinggi', description: 'Penanganan profesional untuk kargo bernilai tinggi dan barang sensitif.' },
-        { title: 'Fleksibilitas', description: 'Pilihan ekspres, standar, dan charter sesuai urgensi dan anggaran Anda.' },
+        { title: '100+ Proyek Sukses', description: 'Track record solid menangani proyek industri besar di berbagai sektor.' },
+        { title: 'Zero Incident Record', description: 'Komitmen penuh terhadap keselamatan kerja di setiap operasi.' },
+        { title: 'Solusi End-to-End', description: 'Dari pelabuhan hingga lokasi proyek, satu mitra untuk seluruh proses.' },
+        { title: 'Kapasitas 500 Ton', description: 'Kemampuan menangani beban hingga 500 ton dengan peralatan spesialis.' },
       ],
     },
-    customs: {
-      title: 'Kepabeanan (Customs Brokerage)',
+    mechanicalErection: {
+      title: 'Mechanical Erection & Assembling',
       description:
-        'Layanan kepabeanan profesional untuk memastikan proses impor dan ekspor berjalan lancar sesuai regulasi yang berlaku di Indonesia.',
+        'Jasa erection, assembling, dan engineering untuk proyek industri besar. Instalasi peralatan pabrik, struktur baja, dan komponen mesin dengan presisi tinggi.',
       features: [
-        'Pengurusan dokumen impor dan ekspor',
-        'Konsultasi tarif bea masuk dan klasifikasi HS code',
-        'Pengurusan izin dan perizinan khusus (BPOM, SNI, Kemendag)',
-        'Audit kepabeanan dan kepatuhan regulasi',
-        'Layanan under name import dan PPJK terdaftar',
+        'Erection — pemasangan struktur baja dan peralatan industri',
+        'Assembling — perakitan komponen mesin dan peralatan',
+        'Engineering — perencanaan teknis dan supervisi',
+        'Commissioning support — dukungan uji coba peralatan',
+        'Alignment & leveling — presisi pemasangan tinggi',
       ],
       processSteps: [
-        { title: 'Review Dokumen', description: 'Pemeriksaan kelengkapan dan kesesuaian seluruh dokumen impor/ekspor.' },
-        { title: 'Klasifikasi & Tarif', description: 'Penentuan HS Code yang tepat dan perhitungan bea masuk serta pajak terkait.' },
-        { title: 'Pengajuan Deklarasi', description: 'Penyerahan dokumen ke sistem CEISA Bea Cukai secara elektronik.' },
-        { title: 'Pemeriksaan Fisik', description: 'Pendampingan jika diperlukan pemeriksaan fisik oleh petugas Bea Cukai.' },
-        { title: 'Release & Pengiriman', description: 'Pengeluaran barang dari pelabuhan/bandara dan koordinasi pengiriman ke tujuan akhir.' },
+        { title: 'Review Teknis', description: 'Evaluasi gambar teknis, spesifikasi, dan kondisi area pemasangan.' },
+        { title: 'Perencanaan Erection', description: 'Penyusunan sequence erection, method statement, dan jadwal pelaksanaan.' },
+        { title: 'Mobilisasi Tim & Peralatan', description: 'Pengerahan tim erection dan peralatan ke lokasi proyek.' },
+        { title: 'Pelaksanaan Erection', description: 'Pemasangan dan perakitan komponen sesuai spesifikasi teknis.' },
+        { title: 'Inspeksi & Serah Terima', description: 'Pemeriksaan kualitas, alignment check, dan serah terima kepada klien.' },
       ],
       benefits: [
-        { title: 'Kepatuhan Regulasi', description: 'Tim PPJK berlisensi memastikan setiap proses sesuai regulasi Bea Cukai terkini.' },
-        { title: 'Proses Cepat', description: 'Rata-rata waktu customs clearance 24 jam untuk jalur hijau.' },
-        { title: 'Konsultasi Ahli', description: 'Panduan profesional untuk klasifikasi HS Code dan optimalisasi tarif bea masuk.' },
-      ],
-    },
-    warehousing: {
-      title: 'Pergudangan (Warehousing)',
-      description:
-        'Fasilitas pergudangan modern di kawasan strategis Surabaya dengan sistem manajemen inventaris terintegrasi.',
-      features: [
-        'Gudang berikat (bonded warehouse) berlisensi',
-        'Sistem manajemen gudang (WMS) berbasis digital',
-        'Penanganan kargo khusus: suhu terkontrol, barang berbahaya',
-        'Layanan stuffing dan unstuffing kontainer',
-        'Distribusi lokal dan regional',
-      ],
-      processSteps: [
-        { title: 'Penerimaan Barang', description: 'Pemeriksaan dan pencatatan barang masuk sesuai dokumen pengiriman.' },
-        { title: 'Penyimpanan & Inventaris', description: 'Penempatan di area penyimpanan yang sesuai dan registrasi ke sistem WMS.' },
-        { title: 'Manajemen Stok', description: 'Pemantauan inventaris real-time, stock opname berkala, dan pelaporan otomatis.' },
-        { title: 'Pengambilan & Distribusi', description: 'Proses pick-pack dan pengiriman ke tujuan akhir sesuai instruksi klien.' },
-      ],
-      benefits: [
-        { title: 'Lokasi Strategis', description: 'Terletak di Surabaya dengan akses langsung ke pelabuhan dan bandara utama.' },
-        { title: 'Fasilitas Berlisensi', description: 'Gudang berikat resmi untuk penundaan pembayaran bea masuk.' },
-        { title: 'Sistem Digital', description: 'WMS berbasis cloud untuk visibilitas inventaris real-time 24/7.' },
-      ],
-    },
-    land: {
-      title: 'Transportasi Darat (Land Transport)',
-      description:
-        'Armada transportasi darat yang handal untuk distribusi kargo di seluruh wilayah Jawa dan Indonesia, terintegrasi dengan layanan laut dan udara.',
-      features: [
-        'Armada truk tronton, trailer, dan low-bed tersedia',
-        'Layanan door-to-port dan port-to-door',
-        'GPS tracking untuk pemantauan armada real-time',
-        'Pengiriman antar pulau melalui kapal ro-ro',
-        'Jadwal pengiriman fleksibel sesuai kebutuhan',
-      ],
-      processSteps: [
-        { title: 'Perencanaan Rute', description: 'Analisis rute optimal berdasarkan lokasi, jenis kargo, dan jadwal pengiriman.' },
-        { title: 'Penjadwalan Armada', description: 'Penugasan kendaraan yang sesuai dan koordinasi dengan pengemudi.' },
-        { title: 'Pemuatan & Berangkat', description: 'Loading kargo dengan supervisi dan keberangkatan sesuai jadwal.' },
-        { title: 'Tracking & Pengiriman', description: 'Pemantauan GPS real-time hingga kargo tiba di tujuan dengan aman.' },
-      ],
-      benefits: [
-        { title: 'Armada Beragam', description: 'Pilihan kendaraan lengkap dari truk tronton hingga low-bed untuk kargo spesial.' },
-        { title: 'Jangkauan Luas', description: 'Pengiriman ke 34 provinsi di Indonesia termasuk layanan antar pulau.' },
-        { title: 'Pemantauan Real-time', description: 'Seluruh armada dilengkapi GPS untuk visibilitas posisi kargo 24/7.' },
-      ],
-    },
-    project: {
-      title: 'Kargo Proyek (Project Cargo)',
-      description:
-        'Penanganan khusus untuk pengiriman kargo berdimensi besar, berat berlebih, atau proyek industri yang memerlukan perencanaan logistik menyeluruh.',
-      features: [
-        'Survei lokasi dan perencanaan rute pengiriman',
-        'Heavy lift dan penanganan kargo over-dimension',
-        'Koordinasi multi-moda (laut, darat, udara)',
-        'Perizinan pengiriman kargo khusus',
-        'Asuransi kargo all-risk untuk proyek besar',
-      ],
-      processSteps: [
-        { title: 'Survei & Konsultasi', description: 'Kunjungan ke lokasi untuk evaluasi dimensi, berat, dan akses jalan.' },
-        { title: 'Perencanaan Logistik', description: 'Penyusunan rencana transportasi detail termasuk rute, izin, dan jadwal.' },
-        { title: 'Pengadaan Peralatan', description: 'Persiapan crane, trailer khusus, dan peralatan heavy lift yang diperlukan.' },
-        { title: 'Eksekusi Transport', description: 'Pelaksanaan pengiriman dengan tim supervisi on-site di setiap tahap.' },
-        { title: 'Instalasi & Serah Terima', description: 'Pendampingan pemasangan dan serah terima di lokasi proyek.' },
-        { title: 'Dokumentasi & Laporan', description: 'Pelaporan lengkap termasuk foto, video, dan dokumentasi asuransi.' },
-      ],
-      benefits: [
-        { title: 'Pengalaman Proyek', description: '100+ proyek industri sukses ditangani dengan dukungan Gama Group.' },
-        { title: 'Solusi End-to-End', description: 'Dari survei lokasi hingga instalasi, satu mitra untuk seluruh proses.' },
-        { title: 'Keamanan Terjamin', description: 'Asuransi all-risk dan zero incident record untuk ketenangan pikiran Anda.' },
-        { title: 'Tim Ahli', description: 'Tenaga profesional berpengalaman dalam heavy lift dan kargo over-dimension.' },
+        { title: 'Tim Berpengalaman', description: 'Tenaga ahli erection dan assembling dengan pengalaman proyek industri 20+ tahun.' },
+        { title: 'Presisi Tinggi', description: 'Standar alignment dan leveling yang ketat untuk memastikan performa peralatan optimal.' },
+        { title: 'Multi-Sektor', description: 'Pengalaman di sektor petrokimia, pembangkit listrik, semen, dan infrastruktur pelabuhan.' },
       ],
     },
     detailPage: {
@@ -184,155 +116,145 @@ export const id: Translations = {
       relatedServices: 'Layanan Terkait',
       ctaTitle: 'Butuh Layanan Ini?',
       ctaSubtitle:
-        'Hubungi tim kami untuk konsultasi gratis dan penawaran terbaik sesuai kebutuhan pengiriman Anda.',
+        'Hubungi tim kami untuk konsultasi dan penawaran terbaik sesuai kebutuhan proyek Anda.',
       ctaButton: 'Hubungi Kami Sekarang',
     },
   },
   whyChooseUs: {
     sectionTitle: 'Mengapa Memilih Kami',
     sectionSubtitle:
-      'Didukung pengalaman Gama Group selama 30+ tahun di industri logistik, GLS hadir dengan fondasi yang kuat untuk melayani kebutuhan pengiriman internasional Anda.',
+      'Didukung pengalaman lebih dari 30 tahun di industri heavy lift dan project logistics, GIS hadir dengan solusi terintegrasi untuk proyek Anda.',
     reasons: [
       {
-        title: 'Warisan Gama Group',
+        title: 'Pengalaman 30+ Tahun',
         description:
-          'Dibangun di atas fondasi Gama Group yang telah berpengalaman lebih dari 30 tahun di industri logistik Indonesia, memberikan kepercayaan dan keandalan yang sudah teruji waktu.',
+          'Berdiri sejak 1995, PT Gama Intisamudera telah membuktikan keandalan dan kompetensinya dalam menangani ratusan proyek heavy lift di berbagai sektor industri.',
       },
       {
-        title: 'Jaringan Global',
+        title: 'Zero Incident Record',
         description:
-          'Didukung oleh kemitraan dengan lebih dari 20 shipping line dan agen di 50+ negara, kami mampu menjangkau hampir seluruh pelabuhan dan bandara utama dunia.',
+          'Keselamatan adalah prioritas utama. Kami bangga mempertahankan zero incident record sepanjang operasional, didukung prosedur keselamatan yang ketat di setiap proyek.',
       },
       {
-        title: 'Keahlian Kepabeanan',
+        title: 'Solusi Terintegrasi',
         description:
-          'Tim kepabeanan berlisensi PPJK dengan keahlian mendalam tentang regulasi perdagangan Indonesia memastikan proses customs clearance berjalan cepat dan sesuai regulasi.',
+          'Dari freight forwarding, project cargo, hingga mechanical erection — satu mitra untuk menangani seluruh kebutuhan logistik dan instalasi proyek Anda.',
       },
       {
-        title: 'Solusi Terukur',
+        title: 'Tim Profesional',
         description:
-          'Setiap klien memiliki kebutuhan unik. Kami merancang solusi logistik yang disesuaikan dengan jenis kargo, anggaran, dan jadwal Anda untuk hasil yang optimal.',
+          'Didukung 65+ tenaga profesional yang berpengalaman di bidang engineering, operasi heavy lift, dan manajemen proyek untuk memastikan setiap pekerjaan berjalan sempurna.',
       },
     ],
   },
-  clients: {
-    sectionTitle: 'Mitra Pelayaran Kami',
+  partners: {
+    pageTitle: 'Mitra & Klien Kami',
+    pageSubtitle:
+      'PT Gama Intisamudera telah dipercaya oleh berbagai perusahaan terkemuka di Indonesia dan internasional.',
+    sectionTitle: 'Klien & Mitra Kami',
   },
   testimonials: {
     sectionTitle: 'Testimoni Klien',
     sectionSubtitle:
-      'Dengarkan langsung dari klien kami tentang pengalaman mereka bekerja sama dengan PT Gama Lintas Samudera.',
+      'Dengarkan langsung dari klien kami tentang pengalaman mereka bekerja sama dengan PT Gama Intisamudera.',
   },
   latestNews: {
     sectionTitle: 'Berita Terbaru',
     sectionSubtitle:
-      'Informasi terkini seputar industri logistik, regulasi perdagangan, dan perkembangan perusahaan kami.',
+      'Informasi terkini seputar proyek, pencapaian, dan perkembangan perusahaan kami.',
     readMore: 'Baca Selengkapnya',
     viewAll: 'Lihat Semua Berita',
   },
   ctaBanner: {
-    title: 'Siap Mengirim Kargo Anda ke Seluruh Dunia?',
+    title: 'Punya Proyek yang Membutuhkan Heavy Lift?',
     subtitle:
-      'Dapatkan penawaran terbaik dari tim kami. Konsultasi gratis, tanpa kewajiban.',
-    buttonText: 'Minta Penawaran Sekarang',
+      'Hubungi tim kami untuk konsultasi dan penawaran. Kami siap membantu proyek Anda dari perencanaan hingga pelaksanaan.',
+    buttonText: 'Hubungi Kami Sekarang',
   },
   about: {
     pageTitle: 'Tentang Kami',
     pageSubtitle:
-      'Mengenal lebih dekat PT Gama Lintas Samudera — divisi internasional Gama Group, mitra terpercaya untuk solusi logistik internasional Anda.',
+      'Mengenal lebih dekat PT Gama Intisamudera — spesialis heavy lift dan project logistics sejak 1995.',
     storyTitle: 'Cerita Kami',
     story: [
-      'Gama Group telah menjadi nama yang dipercaya di industri logistik Indonesia sejak tahun 1995. Selama lebih dari tiga dekade, grup kami telah membangun reputasi yang kuat dalam pengiriman domestik, kepabeanan, pergudangan, dan transportasi darat — melayani ribuan klien dari berbagai sektor industri di seluruh Nusantara.',
-      'Pada tahun 2026, PT Gama Lintas Samudera (GLS) resmi didirikan sebagai divisi internasional Gama Group untuk menjawab kebutuhan klien yang semakin global. Dengan fondasi pengalaman 30+ tahun, jaringan operasional yang luas, serta tim profesional yang sudah teruji, GLS hadir untuk menghubungkan bisnis Indonesia dengan pasar internasional melalui layanan freight forwarding yang andal dan komprehensif.',
-      'Berlokasi strategis di Surabaya — salah satu pusat perdagangan terbesar di Indonesia — GLS memiliki akses langsung ke Pelabuhan Tanjung Perak dan Bandara Internasional Juanda. Didukung kemitraan dengan lebih dari 20 shipping line dan jaringan agen di 50+ negara, kami siap menjadi jembatan yang menghubungkan bisnis Anda ke seluruh dunia.',
+      'PT Gama Intisamudera didirikan pada tahun 1995 di Surabaya sebagai perusahaan yang bergerak di bidang heavy lift transportation dan project logistics. Sejak awal, perusahaan telah memfokuskan diri pada penanganan kargo proyek berdimensi besar dan berat berlebih untuk industri di seluruh Indonesia.',
+      'Selama lebih dari tiga dekade, GIS telah membangun reputasi yang kuat melalui keberhasilan menangani lebih dari 100 proyek besar di berbagai sektor industri termasuk petrokimia, pembangkit listrik, semen, pertambangan, dan infrastruktur pelabuhan. Dengan tagline "Professional, Proportional, Objective, and Nationalism", kami berkomitmen memberikan layanan terbaik untuk kemajuan industri Indonesia.',
+      'Berlokasi strategis di Surabaya dengan akses ke Pelabuhan Tanjung Perak, GIS didukung oleh 65+ tenaga profesional yang berpengalaman di bidang engineering, operasi heavy lift, dan manajemen proyek. Tiga pilar layanan kami — Freight Forwarding, Project Cargo, dan Mechanical Erection — memberikan solusi terintegrasi dari pengiriman hingga pemasangan.',
     ],
     visionTitle: 'Visi',
     vision:
-      'Menjadi perusahaan freight forwarding internasional terdepan di Indonesia yang dikenal atas keandalan, inovasi, dan komitmen terhadap kepuasan pelanggan.',
+      'Menjadi perusahaan heavy lift dan project logistics terdepan di Indonesia yang dikenal atas profesionalisme, keselamatan, dan keandalan.',
     missionTitle: 'Misi',
     missions: [
-      'Menyediakan layanan logistik internasional yang profesional, efisien, dan tepat waktu dengan standar kualitas tertinggi.',
-      'Memanfaatkan pengalaman dan jaringan Gama Group untuk memberikan solusi pengiriman internasional yang terpercaya.',
-      'Membangun dan memperluas jaringan mitra global yang kuat untuk menjamin konektivitas ke seluruh penjuru dunia.',
-      'Menerapkan teknologi terkini dalam operasional untuk meningkatkan transparansi, efisiensi, dan pengalaman pelanggan.',
+      'Menyediakan layanan heavy lift dan project cargo yang profesional, aman, dan tepat waktu sesuai standar internasional.',
+      'Mengembangkan kompetensi engineering dan teknis untuk memberikan solusi inovatif dalam setiap proyek.',
+      'Menjaga zero incident record melalui penerapan standar keselamatan kerja yang ketat di setiap operasi.',
+      'Berkontribusi pada pembangunan industri Indonesia melalui layanan logistik proyek yang handal dan terpercaya.',
     ],
     leadershipTitle: 'Tim Kepemimpinan',
     leadershipSubtitle:
-      'Dipimpin oleh para profesional berpengalaman di industri logistik dan perdagangan internasional.',
+      'Dipimpin oleh para profesional berpengalaman di industri heavy lift dan project logistics.',
     timelineTitle: 'Perjalanan Kami',
     certificationsTitle: 'Sertifikasi & Keanggotaan',
   },
-  routes: {
-    pageTitle: 'Rute & Jaringan',
+  projects: {
+    pageTitle: 'Proyek Kami',
     pageSubtitle:
-      'Jangkauan global kami mencakup rute-rute perdagangan utama dunia, menghubungkan Indonesia dengan lebih dari 50 negara.',
-    coverageTitle: 'Cakupan Wilayah',
-    tradelanesTitle: 'Jalur Perdagangan Utama',
-    portsTitle: 'Pelabuhan & Bandara Mitra',
-  },
-  track: {
-    pageTitle: 'Lacak Kiriman',
-    pageSubtitle:
-      'Pantau status pengiriman Anda secara real-time dengan memasukkan nomor resi atau nomor kontainer.',
-    formTitle: 'Masukkan Detail Pengiriman',
-    trackingNumber: 'Nomor Resi / Nomor Kontainer',
-    trackButton: 'Lacak Sekarang',
-    inquiryTitle: 'Butuh Bantuan?',
-    inquirySubtitle:
-      'Jika Anda mengalami kendala dalam melacak kiriman atau membutuhkan informasi lebih lanjut, tim customer service kami siap membantu.',
-    inquiryButton: 'Hubungi Customer Service',
-  },
-  caseStudies: {
-    pageTitle: 'Studi Kasus',
-    pageSubtitle:
-      'Pelajari bagaimana kami membantu klien mengatasi tantangan logistik mereka dengan solusi yang tepat dan efektif.',
-    readMore: 'Baca Selengkapnya',
+      'Lihat bagaimana GIS menangani berbagai proyek heavy lift dan project cargo di seluruh Indonesia.',
+    readMore: 'Lihat Detail Proyek',
     challenge: 'Tantangan',
     solution: 'Solusi',
     results: 'Hasil',
   },
+  equipment: {
+    pageTitle: 'Peralatan Kami',
+    pageSubtitle:
+      'Armada peralatan heavy lift dan transportasi yang kami miliki untuk mendukung setiap proyek.',
+  },
+  team: {
+    pageTitle: 'Tim Kami',
+    pageSubtitle:
+      'Kenali tim profesional di balik keberhasilan setiap proyek PT Gama Intisamudera.',
+  },
+  gallery: {
+    pageTitle: 'Galeri',
+    pageSubtitle:
+      'Dokumentasi visual dari berbagai proyek heavy lift dan project cargo yang telah kami tangani.',
+  },
   news: {
     pageTitle: 'Berita & Artikel',
     pageSubtitle:
-      'Tetap terinformasi dengan berita terbaru seputar industri logistik, regulasi perdagangan, dan kegiatan perusahaan kami.',
+      'Informasi terkini seputar proyek, industri, dan kegiatan perusahaan kami.',
     readMore: 'Baca Selengkapnya',
   },
   careers: {
     pageTitle: 'Karir',
     pageSubtitle:
-      'Bergabunglah dengan tim profesional kami dan bangun karir yang bermakna di industri logistik internasional.',
+      'Bergabunglah dengan tim profesional kami dan bangun karir di industri heavy lift dan project logistics.',
     cultureTitle: 'Budaya Perusahaan',
     cultureSubtitle:
-      'Kami percaya bahwa karyawan adalah aset terpenting. Di GLS, Anda akan menemukan lingkungan kerja yang kolaboratif, peluang pengembangan diri, dan tantangan yang mendorong pertumbuhan profesional.',
+      'Di GIS, kami mengedepankan profesionalisme, keselamatan kerja, dan pengembangan kompetensi setiap anggota tim.',
     positionsTitle: 'Posisi Tersedia',
     applyButton: 'Lamar Sekarang',
     noPositions:
       'Saat ini belum ada posisi yang tersedia. Silakan kirimkan CV Anda ke email kami untuk dipertimbangkan di kesempatan mendatang.',
   },
-  partners: {
-    pageTitle: 'Mitra Kami',
-    pageSubtitle:
-      'Kemitraan strategis dengan shipping lines terkemuka dan jaringan agen global menjadi fondasi layanan kami yang andal.',
-    shippingLinesTitle: 'Shipping Lines',
-    agentNetworkTitle: 'Jaringan Agen Global',
-    associationsTitle: 'Asosiasi & Keanggotaan',
-  },
   contact: {
     pageTitle: 'Hubungi Kami',
     pageSubtitle:
-      'Kami siap membantu kebutuhan logistik Anda. Kirimkan pertanyaan atau permintaan penawaran melalui formulir berikut.',
+      'Kami siap membantu kebutuhan proyek Anda. Kirimkan pertanyaan atau permintaan penawaran melalui formulir berikut.',
     quoteForm: {
       title: 'Formulir Permintaan Penawaran',
-      origin: 'Asal Pengiriman',
-      destination: 'Tujuan Pengiriman',
+      origin: 'Lokasi Asal',
+      destination: 'Lokasi Tujuan',
       cargoType: 'Jenis Kargo',
-      weight: 'Berat Perkiraan (kg)',
+      weight: 'Berat Perkiraan (ton)',
       serviceType: 'Jenis Layanan',
       name: 'Nama Lengkap',
       email: 'Alamat Email',
       phone: 'Nomor Telepon',
       company: 'Nama Perusahaan',
-      message: 'Pesan Tambahan',
+      message: 'Detail Proyek',
       submit: 'Kirim Permintaan',
       submitting: 'Mengirim...',
       success:
@@ -342,32 +264,31 @@ export const id: Translations = {
     },
     info: {
       title: 'Informasi Kontak',
-      address:
-        'Jl. Laksda M. Nasir 12 A, Surabaya, Jawa Timur, Indonesia',
-      phone: '+6282233181811',
-      email: 'info@gls-id.com',
+      address: 'Jl. Tanjung Priok No 12-12A, Surabaya, Jawa Timur, Indonesia',
+      phone: '031-3296003',
+      email: 'info@gama-group.co',
       hours: 'Senin - Jumat: 08.00 - 17.00 WIB | Sabtu: 08.00 - 12.00 WIB',
     },
   },
   faq: {
     pageTitle: 'Pertanyaan yang Sering Diajukan',
     pageSubtitle:
-      'Temukan jawaban atas pertanyaan umum seputar layanan freight forwarding, kepabeanan, dan pengiriman internasional.',
+      'Temukan jawaban atas pertanyaan umum seputar layanan heavy lift, project cargo, dan logistik proyek kami.',
     categories: {
       general: 'Umum',
-      shipping: 'Pengiriman',
-      customs: 'Kepabeanan',
+      'heavy-lift': 'Heavy Lift',
+      'project-cargo': 'Project Cargo',
       pricing: 'Harga & Biaya',
     },
   },
   footer: {
     companyDescription:
-      'PT Gama Lintas Samudera adalah divisi internasional Gama Group yang berbasis di Surabaya, menyediakan solusi logistik terpadu untuk mendukung kelancaran perdagangan global Anda. Didukung pengalaman 30+ tahun di industri logistik.',
+      'PT Gama Intisamudera adalah perusahaan heavy lift dan project logistics yang berbasis di Surabaya, beroperasi sejak 1995. Spesialis freight forwarding, project cargo handling, dan mechanical erection untuk proyek industri di seluruh Indonesia.',
     quickLinks: 'Tautan Cepat',
     services: 'Layanan',
     contact: 'Kontak',
     copyright:
-      '\u00A9 {year} PT Gama Lintas Samudera. Seluruh hak cipta dilindungi undang-undang.',
+      '\u00A9 {year} PT Gama Intisamudera. Seluruh hak cipta dilindungi undang-undang.',
     newsletter: {
       title: 'Berlangganan Newsletter',
       placeholder: 'Masukkan alamat email Anda',

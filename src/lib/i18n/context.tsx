@@ -23,11 +23,11 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
     const langParam = params.get('lang')
     if (langParam === 'en' || langParam === 'id') {
       setLocale(langParam)
-      localStorage.setItem('gls-lang', langParam)
+      localStorage.setItem('gis-lang', langParam)
       return
     }
 
-    const saved = localStorage.getItem('gls-lang') as Locale | null
+    const saved = localStorage.getItem('gis-lang') as Locale | null
     if (saved === 'en' || saved === 'id') {
       setLocale(saved)
     }
@@ -40,7 +40,7 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
   const toggleLanguage = () => {
     const next = locale === 'id' ? 'en' : 'id'
     setLocale(next)
-    localStorage.setItem('gls-lang', next)
+    localStorage.setItem('gis-lang', next)
   }
 
   return (

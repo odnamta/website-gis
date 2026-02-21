@@ -7,7 +7,7 @@ import { AccordionItem } from '@/components/shared/AccordionItem'
 import { CTABanner } from '@/components/shared/CTABanner'
 import { faqItems } from '@/lib/data/faq'
 
-const categories = ['general', 'shipping', 'customs', 'pricing'] as const
+const categories = ['general', 'heavy-lift', 'project-cargo', 'pricing'] as const
 
 export function FAQContent() {
   const { t, locale } = useLanguage()
@@ -15,8 +15,8 @@ export function FAQContent() {
 
   const categoryLabels: Record<string, string> = {
     general: t.faq.categories.general,
-    shipping: t.faq.categories.shipping,
-    customs: t.faq.categories.customs,
+    'heavy-lift': t.faq.categories['heavy-lift'],
+    'project-cargo': t.faq.categories['project-cargo'],
     pricing: t.faq.categories.pricing,
   }
 
@@ -25,13 +25,13 @@ export function FAQContent() {
   return (
     <>
       {/* Header */}
-      <section className="py-20 bg-navy-900">
+      <section className="py-20 bg-green-900">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center">
           <AnimateOnScroll>
             <h1 className="text-4xl sm:text-5xl font-heading font-bold text-white mb-4">
               {t.faq.pageTitle}
             </h1>
-            <p className="text-lg text-navy-300">{t.faq.pageSubtitle}</p>
+            <p className="text-lg text-green-300">{t.faq.pageSubtitle}</p>
           </AnimateOnScroll>
         </div>
       </section>
@@ -47,7 +47,7 @@ export function FAQContent() {
                   onClick={() => setActiveCategory(cat)}
                   className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
                     activeCategory === cat
-                      ? 'bg-navy-900 text-white'
+                      ? 'bg-green-900 text-white'
                       : 'bg-slate-100 text-slate-600 hover:bg-slate-200'
                   }`}
                 >

@@ -3,10 +3,10 @@ import { PageWrapper } from '@/components/layout/PageWrapper'
 import { CaseStudiesContent } from '@/components/case-studies/CaseStudiesContent'
 
 export const metadata: Metadata = {
-  title: 'Studi Kasus',
-  description: 'Studi kasus pengiriman internasional oleh PT Gama Lintas Samudera.',
+  title: 'Proyek Kami',
+  description: 'Proyek heavy lift dan project cargo oleh PT Gama Intisamudera.',
   alternates: { canonical: '/case-studies' },
-  openGraph: { title: 'Studi Kasus — Gama Lintas Samudera', description: 'Lihat bagaimana kami menangani pengiriman kompleks untuk berbagai industri.' },
+  openGraph: { title: 'Proyek Kami — PT Gama Intisamudera', description: 'Lihat bagaimana kami menangani berbagai proyek heavy lift di Indonesia.' },
 }
 
 export default function CaseStudies() {

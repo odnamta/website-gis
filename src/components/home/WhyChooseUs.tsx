@@ -20,10 +20,10 @@ export function WhyChooseUs() {
             return (
               <AnimateOnScroll key={i} delay={i * 0.1}>
                 <div className="text-center p-6">
-                  <div className="w-16 h-16 mx-auto rounded-2xl bg-navy-900 flex items-center justify-center mb-4">
-                    <Icon className="w-7 h-7 text-gold-400" />
+                  <div className="w-16 h-16 mx-auto rounded-2xl bg-green-900 flex items-center justify-center mb-4">
+                    <Icon className="w-7 h-7 text-yellow-400" />
                   </div>
-                  <h3 className="text-lg font-heading font-semibold text-navy-900 mb-2">{reason.title}</h3>
+                  <h3 className="text-lg font-heading font-semibold text-green-900 mb-2">{reason.title}</h3>
                   <p className="text-sm text-slate-500 leading-relaxed">{reason.description}</p>
                 </div>
               </AnimateOnScroll>

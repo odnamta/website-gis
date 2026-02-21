@@ -10,12 +10,12 @@ export function Hero() {
   const { t } = useLanguage()
 
   return (
-    <section className="relative min-h-[90vh] flex items-center bg-navy-900 overflow-hidden">
+    <section className="relative min-h-[90vh] flex items-center bg-green-900 overflow-hidden">
       {/* Background pattern */}
       <div className="absolute inset-0">
-        <div className="absolute inset-0 bg-gradient-to-br from-navy-900 via-navy-800 to-navy-900" />
-        <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-gold-500/5 rounded-full -translate-y-1/3 translate-x-1/4 blur-3xl" />
-        <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-gold-500/5 rounded-full translate-y-1/3 -translate-x-1/4 blur-3xl" />
+        <div className="absolute inset-0 bg-gradient-to-br from-green-900 via-green-800 to-green-900" />
+        <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-yellow-500/5 rounded-full -translate-y-1/3 translate-x-1/4 blur-3xl" />
+        <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-yellow-500/5 rounded-full translate-y-1/3 -translate-x-1/4 blur-3xl" />
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 py-20 w-full">
@@ -25,14 +25,14 @@ export function Hero() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-gold-500/10 border border-gold-500/20 text-gold-400 text-sm font-medium mb-6">
+            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-yellow-500/10 border border-yellow-500/20 text-yellow-400 text-sm font-medium mb-6">
               <Image src="/logo.png" alt="" width={20} height={20} className="w-5 h-5 object-contain rounded-sm" />
-              PT Gama Lintas Samudera
+              PT Gama Intisamudera
             </div>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-heading font-bold text-white leading-tight mb-6">
               {t.hero.title}
             </h1>
-            <p className="text-lg sm:text-xl text-navy-300 leading-relaxed mb-8 max-w-lg">
+            <p className="text-lg sm:text-xl text-green-300 leading-relaxed mb-8 max-w-lg">
               {t.hero.subtitle}
             </p>
             <div className="flex flex-wrap gap-3">
@@ -40,7 +40,7 @@ export function Hero() {
                 {t.hero.ctaQuote}
                 <ArrowRight className="w-4 h-4" />
               </Button>
-              <Button variant="secondary" href="/services" className="border-navy-400 text-white hover:bg-navy-800">
+              <Button variant="secondary" href="/services" className="border-green-400 text-white hover:bg-green-800">
                 {t.hero.ctaServices}
               </Button>
             </div>
@@ -55,9 +55,9 @@ export function Hero() {
           >
             {[
               { value: '30+', label: t.hero.stats.yearsExperience },
-              { value: '50+', label: t.hero.stats.countriesServed },
-              { value: '20+', label: t.hero.stats.shippingPartners },
-              { value: '100%', label: t.hero.stats.clientSatisfaction },
+              { value: '65+', label: t.hero.stats.totalStaff },
+              { value: '100+', label: t.hero.stats.projectsCompleted },
+              { value: '3', label: t.hero.stats.coreServices },
             ].map((stat, i) => (
               <motion.div
                 key={i}
@@ -66,10 +66,10 @@ export function Hero() {
                 transition={{ duration: 0.4, delay: 0.4 + i * 0.1 }}
                 className="p-5 rounded-xl bg-white/5 border border-white/10 backdrop-blur-sm text-center"
               >
-                <div className="text-3xl sm:text-4xl font-heading font-bold text-gold-400 mb-1">
+                <div className="text-3xl sm:text-4xl font-heading font-bold text-yellow-400 mb-1">
                   {stat.value}
                 </div>
-                <div className="text-sm text-navy-300">{stat.label}</div>
+                <div className="text-sm text-green-300">{stat.label}</div>
               </motion.div>
             ))}
           </motion.div>

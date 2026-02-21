@@ -19,7 +19,7 @@ export function AccordionItem({ question, answer }: AccordionItemProps) {
         className="w-full flex items-center justify-between py-5 text-left group"
         aria-expanded={isOpen}
       >
-        <span className="text-navy-900 font-medium pr-4 group-hover:text-gold-600 transition-colors">
+        <span className="text-green-900 font-medium pr-4 group-hover:text-yellow-600 transition-colors">
           {question}
         </span>
         <ChevronDown

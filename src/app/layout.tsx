@@ -17,28 +17,28 @@ const poppins = Poppins({
 })
 
 export const viewport: Viewport = {
-  themeColor: '#0B1D3E',
+  themeColor: '#0D4D25',
 }
 
 export const metadata: Metadata = {
   title: {
-    default: 'PT Gama Lintas Samudera — International Freight Forwarding',
-    template: '%s | Gama Lintas Samudera',
+    default: 'PT Gama Intisamudera — Heavy Lift & Project Logistics',
+    template: '%s | PT Gama Intisamudera',
   },
   description:
-    'PT Gama Lintas Samudera — Your trusted international freight forwarding partner in Surabaya, Indonesia. Ocean freight, air freight, customs brokerage, and logistics solutions.',
+    'Spesialis transportasi heavy lift dan project cargo di seluruh Indonesia sejak 1995. International freight forwarding, project cargo handling, mechanical erection & assembling.',
   keywords: [
-    'Gama Lintas Samudera',
+    'Gama Intisamudera',
+    'heavy lift',
+    'project cargo',
+    'project logistics',
+    'mechanical erection',
     'freight forwarding',
-    'international shipping',
-    'ocean freight',
-    'air freight',
-    'customs brokerage',
-    'logistics',
+    'heavy transport',
     'Surabaya',
     'Indonesia',
   ],
-  authors: [{ name: 'PT Gama Lintas Samudera' }],
+  authors: [{ name: 'PT Gama Intisamudera' }],
   icons: {
     icon: [
       { url: '/favicon.svg', type: 'image/svg+xml' },
@@ -46,27 +46,27 @@ export const metadata: Metadata = {
     ],
     apple: '/apple-touch-icon.png',
   },
-  metadataBase: new URL('https://gls-id.com'),
+  metadataBase: new URL('https://gamaintisamudera.com'),
   openGraph: {
-    title: 'PT Gama Lintas Samudera',
-    description: 'Your trusted international freight forwarding partner in Surabaya, Indonesia.',
+    title: 'PT Gama Intisamudera — Heavy Lift & Project Logistics',
+    description: 'Spesialis transportasi heavy lift dan project cargo di seluruh Indonesia sejak 1995.',
     type: 'website',
     locale: 'id_ID',
     alternateLocale: 'en_US',
-    siteName: 'Gama Lintas Samudera',
+    siteName: 'PT Gama Intisamudera',
     images: [
       {
         url: '/og-default.png',
         width: 1200,
         height: 630,
-        alt: 'PT Gama Lintas Samudera — International Freight Forwarding',
+        alt: 'PT Gama Intisamudera — Heavy Lift & Project Logistics',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'PT Gama Lintas Samudera',
-    description: 'Your trusted international freight forwarding partner in Surabaya, Indonesia.',
+    title: 'PT Gama Intisamudera — Heavy Lift & Project Logistics',
+    description: 'Spesialis transportasi heavy lift dan project cargo di seluruh Indonesia sejak 1995.',
     images: ['/og-default.png'],
   },
   robots: {
@@ -89,13 +89,13 @@ export default function RootLayout({
             __html: JSON.stringify({
               '@context': 'https://schema.org',
               '@type': 'Organization',
-              name: 'PT Gama Lintas Samudera',
-              url: 'https://gls-id.com',
-              logo: 'https://gls-id.com/logo.png',
-              description: 'International freight forwarding company based in Surabaya, Indonesia.',
+              name: 'PT Gama Intisamudera',
+              url: 'https://gamaintisamudera.com',
+              logo: 'https://gamaintisamudera.com/logo.png',
+              description: 'Spesialis transportasi heavy lift dan project cargo di seluruh Indonesia sejak 1995.',
               address: {
                 '@type': 'PostalAddress',
-                streetAddress: 'Jl. Laksda M. Nasir 12 A',
+                streetAddress: 'Jl. Tanjung Priok No 12-12A',
                 addressLocality: 'Surabaya',
                 addressRegion: 'East Java',
                 postalCode: '60165',
@@ -103,7 +103,7 @@ export default function RootLayout({
               },
               contactPoint: {
                 '@type': 'ContactPoint',
-                telephone: '+6282233181811',
+                telephone: '+62313296003',
                 contactType: 'customer service',
                 availableLanguage: ['Indonesian', 'English'],
               },
@@ -117,7 +117,7 @@ export default function RootLayout({
       <body className="min-h-screen antialiased font-sans">
         <a
           href="#main-content"
-          className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[100] focus:px-4 focus:py-2 focus:bg-navy-900 focus:text-white focus:rounded-lg focus:text-sm"
+          className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[100] focus:px-4 focus:py-2 focus:bg-green-900 focus:text-white focus:rounded-lg focus:text-sm"
         >
           Skip to content
         </a>

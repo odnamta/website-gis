@@ -32,7 +32,7 @@ function ServiceDetailContent({ slug }: { slug: string }) {
       {/* Related Services */}
       <section className="py-20 bg-slate-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
-          <h2 className="text-3xl font-heading font-bold text-navy-900 mb-8 text-center">
+          <h2 className="text-3xl font-heading font-bold text-green-900 mb-8 text-center">
             {t.services.detailPage.relatedServices}
           </h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
