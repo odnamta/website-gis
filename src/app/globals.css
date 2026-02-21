@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+@theme {
+  /* Navy scale */
+  --color-navy-50: #E8ECF4;
+  --color-navy-100: #C5CEE0;
+  --color-navy-200: #9DADC9;
+  --color-navy-300: #758CB2;
+  --color-navy-400: #5774A0;
+  --color-navy-500: #3A5C8E;
+  --color-navy-600: #2E4A73;
+  --color-navy-700: #213858;
+  --color-navy-800: #15263D;
+  --color-navy-900: #0B1D3E;
+
+  /* Gold scale */
+  --color-gold-50: #FDF8EF;
+  --color-gold-100: #F9EDD5;
+  --color-gold-200: #F2DAA8;
+  --color-gold-300: #EBC77B;
+  --color-gold-400: #D4A94E;
+  --color-gold-500: #C5963A;
+  --color-gold-600: #A67B2E;
+  --color-gold-700: #876023;
+
+  /* Slate neutrals */
+  --color-slate-50: #F8FAFC;
+  --color-slate-100: #F1F5F9;
+  --color-slate-200: #E2E8F0;
+  --color-slate-300: #CBD5E1;
+  --color-slate-400: #94A3B8;
+  --color-slate-500: #64748B;
+  --color-slate-600: #475569;
+  --color-slate-700: #334155;
+
+  /* Semantic aliases */
+  --color-primary: #0B1D3E;
+  --color-accent: #C5963A;
+  --color-surface: #F8FAFC;
+  --color-surface-alt: #F1F5F9;
+  --color-text: #0B1D3E;
+  --color-text-muted: #64748B;
+  --color-border: #E2E8F0;
+
+  /* Fonts */
+  --font-sans: var(--font-inter), system-ui, sans-serif;
+  --font-heading: var(--font-poppins), system-ui, sans-serif;
+}
+
+body {
+  color: var(--color-text);
+  background-color: var(--color-surface);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+::selection {
+  background-color: var(--color-gold-200);
+  color: var(--color-navy-900);
+}
