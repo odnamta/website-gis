@@ -8,7 +8,7 @@ import { company } from '@/lib/data/company'
 import { MapPin, Phone, Mail, Clock, Send, CheckCircle } from 'lucide-react'
 
 export function ContactContent() {
-  const { t, locale } = useLanguage()
+  const { t } = useLanguage()
   const [status, setStatus] = useState<'idle' | 'submitting' | 'success' | 'error'>('idle')
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
@@ -36,10 +36,10 @@ export function ContactContent() {
   const inputClasses =
     'w-full px-4 py-3 rounded-lg border border-slate-200 bg-white text-green-900 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:border-transparent transition-shadow text-sm'
 
-  const dimensionLabel = locale === 'id' ? 'Dimensi Kargo' : 'Cargo Dimensions'
-  const lengthLabel = locale === 'id' ? 'Panjang (m)' : 'Length (m)'
-  const widthLabel = locale === 'id' ? 'Lebar (m)' : 'Width (m)'
-  const heightLabel = locale === 'id' ? 'Tinggi (m)' : 'Height (m)'
+  const dimensionLabel = t.contact.quoteForm.cargoDimensions
+  const lengthLabel = t.contact.quoteForm.length
+  const widthLabel = t.contact.quoteForm.width
+  const heightLabel = t.contact.quoteForm.height
 
   return (
     <>
@@ -118,9 +118,9 @@ export function ContactContent() {
                           <label htmlFor="serviceType" className="sr-only">{t.contact.quoteForm.serviceType}</label>
                           <select id="serviceType" name="serviceType" className={inputClasses} defaultValue="">
                             <option value="" disabled>{t.contact.quoteForm.serviceType}</option>
-                            <option value="freight-forwarding">Freight Forwarding</option>
-                            <option value="project-cargo">Project Cargo</option>
-                            <option value="mechanical-erection">Mechanical Erection</option>
+                            <option value="freight-forwarding">{t.contact.quoteForm.serviceOptions.freightForwarding}</option>
+                            <option value="project-cargo">{t.contact.quoteForm.serviceOptions.projectCargo}</option>
+                            <option value="mechanical-erection">{t.contact.quoteForm.serviceOptions.mechanicalErection}</option>
                           </select>
                         </div>
                       </div>
@@ -190,7 +190,7 @@ export function ContactContent() {
                           {company.phone}
                         </a>
                         <br />
-                        <span className="text-green-400 text-xs">Fax: {company.fax}</span>
+                        <span className="text-green-400 text-xs">{t.contact.info.fax}: {company.fax}</span>
                       </div>
                     </li>
                     <li className="flex items-start gap-3">

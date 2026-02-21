@@ -17,7 +17,7 @@ export const en: Translations = {
     getQuote: 'Get a Quote',
   },
   hero: {
-    title: 'Professional, Proportional, Objective, and Nationalism',
+    title: 'We Deliver Certainty',
     subtitle:
       'Gama Intisamudera brings together professional project logistics and heavy lift transportation services across Indonesia.',
     ctaQuote: 'Contact Us',
@@ -250,6 +250,15 @@ export const en: Translations = {
       cargoType: 'Cargo Type',
       weight: 'Estimated Weight (tons)',
       serviceType: 'Service Type',
+      serviceOptions: {
+        freightForwarding: 'Freight Forwarding',
+        projectCargo: 'Project Cargo',
+        mechanicalErection: 'Mechanical Erection',
+      },
+      cargoDimensions: 'Cargo Dimensions',
+      length: 'Length (m)',
+      width: 'Width (m)',
+      height: 'Height (m)',
       name: 'Full Name',
       email: 'Email Address',
       phone: 'Phone Number',
@@ -266,6 +275,7 @@ export const en: Translations = {
       title: 'Contact Information',
       address: 'Jl. Tanjung Priok No 12-12A, Surabaya, East Java, Indonesia',
       phone: '031-3296003',
+      fax: 'Fax',
       email: 'info@gama-group.co',
       hours: 'Monday - Friday: 08:00 - 17:00 WIB | Saturday: 08:00 - 12:00 WIB',
     },
@@ -286,6 +296,7 @@ export const en: Translations = {
       'PT. Gama Intisamudera is a heavy lift and project logistics company based in Surabaya, operating since 1995. Specializing in freight forwarding, project cargo handling, and mechanical erection for industrial projects across Indonesia.',
     quickLinks: 'Quick Links',
     services: 'Services',
+    info: 'Info',
     contact: 'Contact Us',
     copyright:
       '\u00A9 {year} PT. Gama Intisamudera. All rights reserved.',

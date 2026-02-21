@@ -137,6 +137,15 @@ export interface Translations {
       cargoType: string
       weight: string
       serviceType: string
+      serviceOptions: {
+        freightForwarding: string
+        projectCargo: string
+        mechanicalErection: string
+      }
+      cargoDimensions: string
+      length: string
+      width: string
+      height: string
       name: string
       email: string
       phone: string
@@ -151,6 +160,7 @@ export interface Translations {
       title: string
       address: string
       phone: string
+      fax: string
       email: string
       hours: string
     }
@@ -169,6 +179,7 @@ export interface Translations {
     companyDescription: string
     quickLinks: string
     services: string
+    info: string
     contact: string
     copyright: string
     newsletter: {

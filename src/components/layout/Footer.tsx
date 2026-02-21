@@ -58,7 +58,7 @@ export function Footer() {
 
           {/* Column 3: More Links */}
           <div>
-            <h3 className="font-heading font-semibold text-yellow-400 mb-4">Info</h3>
+            <h3 className="font-heading font-semibold text-yellow-400 mb-4">{t.footer.info}</h3>
             <ul className="space-y-2.5">
               {[
                 { label: t.nav.team, href: '/team' },
@@ -102,7 +102,7 @@ export function Footer() {
               </li>
               <li className="flex items-center gap-2.5">
                 <Clock className="w-4 h-4 text-green-400 flex-shrink-0" />
-                <span className="text-sm text-green-300">08:00 - 17:00 WIB</span>
+                <span className="text-sm text-green-300">{t.contact.info.hours}</span>
               </li>
             </ul>
           </div>
