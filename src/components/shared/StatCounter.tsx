@@ -9,9 +9,10 @@ interface StatCounterProps {
   prefix?: string
   label: string
   duration?: number
+  light?: boolean
 }
 
-export function StatCounter({ value, suffix = '', prefix = '', label, duration = 2 }: StatCounterProps) {
+export function StatCounter({ value, suffix = '', prefix = '', label, duration = 2, light = false }: StatCounterProps) {
   const ref = useRef<HTMLDivElement>(null)
   const isInView = useInView(ref, { once: true, margin: '-50px' })
   const [count, setCount] = useState(0)
@@ -52,7 +53,9 @@ export function StatCounter({ value, suffix = '', prefix = '', label, duration =
       <div className="text-4xl sm:text-5xl font-heading font-bold text-yellow-500">
         {prefix}{count.toLocaleString()}{suffix}
       </div>
-      <div className="mt-2 text-sm text-slate-500 font-medium">{label}</div>
+      <div className={`mt-2 text-sm font-medium uppercase tracking-wider ${light ? 'text-green-300' : 'text-slate-500'}`}>
+        {label}
+      </div>
     </motion.div>
   )
 }

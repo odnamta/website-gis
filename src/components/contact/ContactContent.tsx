@@ -8,7 +8,7 @@ import { company } from '@/lib/data/company'
 import { MapPin, Phone, Mail, Clock, Send, CheckCircle } from 'lucide-react'
 
 export function ContactContent() {
-  const { t } = useLanguage()
+  const { t, locale } = useLanguage()
   const [status, setStatus] = useState<'idle' | 'submitting' | 'success' | 'error'>('idle')
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
@@ -35,6 +35,11 @@ export function ContactContent() {
 
   const inputClasses =
     'w-full px-4 py-3 rounded-lg border border-slate-200 bg-white text-green-900 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:border-transparent transition-shadow text-sm'
+
+  const dimensionLabel = locale === 'id' ? 'Dimensi Kargo' : 'Cargo Dimensions'
+  const lengthLabel = locale === 'id' ? 'Panjang (m)' : 'Length (m)'
+  const widthLabel = locale === 'id' ? 'Lebar (m)' : 'Width (m)'
+  const heightLabel = locale === 'id' ? 'Tinggi (m)' : 'Height (m)'
 
   return (
     <>
@@ -67,6 +72,7 @@ export function ContactContent() {
                     </div>
                   ) : (
                     <form onSubmit={handleSubmit} className="space-y-4">
+                      {/* Personal info */}
                       <div className="grid sm:grid-cols-2 gap-4">
                         <div>
                           <label htmlFor="name" className="sr-only">{t.contact.quoteForm.name}</label>
@@ -85,6 +91,8 @@ export function ContactContent() {
                           <input id="company" name="company" placeholder={t.contact.quoteForm.company} className={inputClasses} />
                         </div>
                       </div>
+
+                      {/* Origin / Destination */}
                       <div className="grid sm:grid-cols-2 gap-4">
                         <div>
                           <label htmlFor="origin" className="sr-only">{t.contact.quoteForm.origin}</label>
@@ -95,6 +103,8 @@ export function ContactContent() {
                           <input id="destination" name="destination" required placeholder={t.contact.quoteForm.destination} className={inputClasses} />
                         </div>
                       </div>
+
+                      {/* Cargo type, weight, service type */}
                       <div className="grid sm:grid-cols-3 gap-4">
                         <div>
                           <label htmlFor="cargoType" className="sr-only">{t.contact.quoteForm.cargoType}</label>
@@ -114,6 +124,27 @@ export function ContactContent() {
                           </select>
                         </div>
                       </div>
+
+                      {/* Cargo dimensions — heavy-lift specific */}
+                      <div>
+                        <p className="text-sm font-medium text-slate-600 mb-2">{dimensionLabel}</p>
+                        <div className="grid grid-cols-3 gap-4">
+                          <div>
+                            <label htmlFor="cargoLength" className="sr-only">{lengthLabel}</label>
+                            <input id="cargoLength" name="cargoLength" type="number" step="0.01" placeholder={lengthLabel} className={inputClasses} />
+                          </div>
+                          <div>
+                            <label htmlFor="cargoWidth" className="sr-only">{widthLabel}</label>
+                            <input id="cargoWidth" name="cargoWidth" type="number" step="0.01" placeholder={widthLabel} className={inputClasses} />
+                          </div>
+                          <div>
+                            <label htmlFor="cargoHeight" className="sr-only">{heightLabel}</label>
+                            <input id="cargoHeight" name="cargoHeight" type="number" step="0.01" placeholder={heightLabel} className={inputClasses} />
+                          </div>
+                        </div>
+                      </div>
+
+                      {/* Message */}
                       <div>
                         <label htmlFor="message" className="sr-only">{t.contact.quoteForm.message}</label>
                         <textarea
@@ -124,6 +155,7 @@ export function ContactContent() {
                           className={inputClasses}
                         />
                       </div>
+
                       {status === 'error' && (
                         <p className="text-sm text-red-600">{t.contact.quoteForm.error}</p>
                       )}
