@@ -17,10 +17,6 @@ export function Stats() {
         `,
         backgroundSize: '60px 60px',
       }} />
-      {/* Glow accents */}
-      <div className="absolute -left-32 top-1/2 -translate-y-1/2 w-64 h-64 bg-yellow-500/10 rounded-full blur-3xl" />
-      <div className="absolute -right-32 top-1/2 -translate-y-1/2 w-64 h-64 bg-yellow-500/10 rounded-full blur-3xl" />
-
       <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6">
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-4">
           {stats.map((stat, i) => (

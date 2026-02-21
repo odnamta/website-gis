@@ -178,7 +178,7 @@ export const en: Translations = {
     storyTitle: 'Our Story',
     story: [
       'PT. Gama Intisamudera was established in 1995 in Surabaya as a company specializing in heavy lift transportation and project logistics. From the beginning, the company has focused on handling oversized and overweight project cargo for industries across Indonesia.',
-      'Over three decades, GIS has built a strong reputation through the successful handling of over 100 major projects across various industrial sectors including petrochemicals, power generation, cement, mining, and port infrastructure. With the tagline "Professional, Proportional, Objective, and Nationalism," we are committed to delivering the best services for the advancement of Indonesian industry.',
+      'Over three decades, GIS has built a strong reputation through the successful handling of over 100 major projects across various industrial sectors including petrochemicals, power generation, cement, mining, and port infrastructure. Our promise is simple: We Deliver Certainty — on time, on spec, every project.',
       'Strategically located in Surabaya with access to Tanjung Perak Port, GIS is supported by 65+ experienced professionals in engineering, heavy lift operations, and project management. Our three service pillars — Freight Forwarding, Project Cargo, and Mechanical Erection — provide integrated solutions from delivery to installation.',
     ],
     visionTitle: 'Our Vision',

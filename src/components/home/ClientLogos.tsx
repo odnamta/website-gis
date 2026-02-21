@@ -21,19 +21,14 @@ export function ClientLogos() {
   const { t } = useLanguage()
 
   return (
-    <section className="py-20 bg-green-900 relative overflow-hidden">
-      {/* Background texture */}
-      <div className="absolute inset-0 opacity-[0.03]" style={{
-        backgroundImage: 'repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(255,255,255,1) 35px, rgba(255,255,255,1) 36px)',
-      }} />
-
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6">
+    <section className="py-20 bg-green-900">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <AnimateOnScroll>
           <p className="text-center text-sm font-semibold text-yellow-400 uppercase tracking-[0.2em] mb-12">
             {t.partners.sectionTitle}
           </p>
         </AnimateOnScroll>
-        <div className="grid grid-cols-2 sm:grid-cols-5 gap-4">
+        <div className="grid grid-cols-2 sm:grid-cols-5 gap-5">
           {partners.map((partner, i) => (
             <AnimateOnScroll key={partner.name} delay={i * 0.05}>
               <div className="group h-20 rounded-xl bg-white/5 border border-white/10 flex items-center gap-3 px-4 hover:bg-white/10 hover:border-yellow-500/30 transition-all duration-200">

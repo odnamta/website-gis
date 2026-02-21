@@ -11,14 +11,8 @@ export function WhyChooseUs() {
   const { t } = useLanguage()
 
   return (
-    <section className="py-24 bg-surface relative overflow-hidden">
-      {/* Subtle dot pattern */}
-      <div className="absolute inset-0 opacity-[0.03]" style={{
-        backgroundImage: 'radial-gradient(circle at 1px 1px, rgba(13,77,37,1) 1px, transparent 0)',
-        backgroundSize: '24px 24px',
-      }} />
-
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6">
+    <section className="py-24 bg-surface">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <SectionHeading title={t.whyChooseUs.sectionTitle} subtitle={t.whyChooseUs.sectionSubtitle} />
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {t.whyChooseUs.reasons.map((reason, i) => {

@@ -1,7 +1,8 @@
 export const company = {
   name: 'PT. Gama Intisamudera',
   shortName: 'GIS',
-  tagline: 'Professional, Proportional, Objective, and Nationalism',
+  tagline: 'We Deliver Certainty',
+  taglineId: 'Kami Mengantarkan Kepastian',
   address: 'Jl. Tanjung Priok No 12-12A, Surabaya',
   phone: '(031) 329-6003',
   fax: '(031) 329-6002',

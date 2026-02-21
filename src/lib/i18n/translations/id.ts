@@ -178,7 +178,7 @@ export const id: Translations = {
     storyTitle: 'Cerita Kami',
     story: [
       'PT. Gama Intisamudera didirikan pada tahun 1995 di Surabaya sebagai perusahaan yang bergerak di bidang heavy lift transportation dan project logistics. Sejak awal, perusahaan telah memfokuskan diri pada penanganan kargo proyek berdimensi besar dan berat berlebih untuk industri di seluruh Indonesia.',
-      'Selama lebih dari tiga dekade, GIS telah membangun reputasi yang kuat melalui keberhasilan menangani lebih dari 100 proyek besar di berbagai sektor industri termasuk petrokimia, pembangkit listrik, semen, pertambangan, dan infrastruktur pelabuhan. Dengan tagline "Professional, Proportional, Objective, and Nationalism", kami berkomitmen memberikan layanan terbaik untuk kemajuan industri Indonesia.',
+      'Selama lebih dari tiga dekade, GIS telah membangun reputasi yang kuat melalui keberhasilan menangani lebih dari 100 proyek besar di berbagai sektor industri termasuk petrokimia, pembangkit listrik, semen, pertambangan, dan infrastruktur pelabuhan. Janji kami sederhana: Kami Mengantarkan Kepastian — tepat waktu, tepat spesifikasi, di setiap proyek.',
       'Berlokasi strategis di Surabaya dengan akses ke Pelabuhan Tanjung Perak, GIS didukung oleh 65+ tenaga profesional yang berpengalaman di bidang engineering, operasi heavy lift, dan manajemen proyek. Tiga pilar layanan kami — Freight Forwarding, Project Cargo, dan Mechanical Erection — memberikan solusi terintegrasi dari pengiriman hingga pemasangan.',
     ],
     visionTitle: 'Visi',
