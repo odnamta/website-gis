@@ -2,10 +2,9 @@
 
 import { useLanguage } from '@/lib/i18n/context'
 import { AnimateOnScroll } from '@/components/shared/AnimateOnScroll'
-import { ImagePlaceholder } from '@/components/shared/ImagePlaceholder'
 import { CTABanner } from '@/components/shared/CTABanner'
 import { SectionHeading } from '@/components/shared/SectionHeading'
-import { Target, Eye, Shield, Star, Heart } from 'lucide-react'
+import { Target, Eye, Shield, Star, Heart, Anchor, Truck, Award } from 'lucide-react'
 
 const milestones = [
   { year: '1995', titleId: 'Didirikan di Surabaya', titleEn: 'Founded in Surabaya', descId: 'PT Gama Intisamudera didirikan sebagai perusahaan freight forwarding dan heavy lift transportation di bawah naungan Gama Group.', descEn: 'PT Gama Intisamudera was established as a freight forwarding and heavy lift transportation company under the Gama Group.' },
@@ -26,8 +25,15 @@ export function AboutContent() {
   return (
     <>
       {/* Header */}
-      <section className="py-20 bg-green-900">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center">
+      <section className="py-20 bg-green-900 relative overflow-hidden">
+        <div className="absolute inset-0 opacity-[0.04]" style={{
+          backgroundImage: `linear-gradient(rgba(255,255,255,0.3) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.3) 1px, transparent 1px)`,
+          backgroundSize: '60px 60px',
+        }} />
+        <div className="absolute -right-20 top-0 w-96 h-96 opacity-[0.03]">
+          <Anchor className="w-full h-full text-white" strokeWidth={0.3} />
+        </div>
+        <div className="relative max-w-4xl mx-auto px-4 sm:px-6 text-center">
           <AnimateOnScroll>
             <h1 className="text-4xl sm:text-5xl font-heading font-bold text-white mb-4">
               {t.about.pageTitle}
@@ -42,7 +48,33 @@ export function AboutContent() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <AnimateOnScroll>
-              <ImagePlaceholder label="Company Photo" className="w-full" />
+              <div className="relative rounded-2xl bg-gradient-to-br from-green-900 via-green-800 to-green-900 overflow-hidden" style={{ aspectRatio: '4/3' }}>
+                <div className="absolute inset-0 opacity-[0.06]" style={{
+                  backgroundImage: `linear-gradient(rgba(255,255,255,0.4) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.4) 1px, transparent 1px)`,
+                  backgroundSize: '40px 40px',
+                }} />
+                <div className="absolute inset-0 flex items-center justify-center opacity-[0.06]">
+                  <Anchor className="w-64 h-64 text-white" strokeWidth={0.5} />
+                </div>
+                <div className="relative z-10 flex flex-col items-center justify-center h-full p-8">
+                  <div className="flex gap-4 mb-6">
+                    {[Anchor, Truck, Award].map((Icon, idx) => (
+                      <div key={idx} className="w-14 h-14 rounded-xl bg-yellow-500/15 border border-yellow-500/25 flex items-center justify-center">
+                        <Icon className="w-7 h-7 text-yellow-400" />
+                      </div>
+                    ))}
+                  </div>
+                  <p className="text-xs text-yellow-400 font-semibold uppercase tracking-[0.2em] mb-2">
+                    {locale === 'id' ? 'Sejak 1995' : 'Since 1995'}
+                  </p>
+                  <p className="text-white font-heading font-bold text-2xl text-center">
+                    PT. Gama Intisamudera
+                  </p>
+                  <p className="text-green-300 text-sm mt-2 text-center max-w-xs">
+                    {locale === 'id' ? 'Freight Forwarding · Project Cargo · Mechanical Erection' : 'Freight Forwarding · Project Cargo · Mechanical Erection'}
+                  </p>
+                </div>
+              </div>
             </AnimateOnScroll>
             <AnimateOnScroll delay={0.1}>
               <h2 className="text-3xl font-heading font-bold text-green-900 mb-6">{t.about.storyTitle}</h2>
@@ -57,8 +89,12 @@ export function AboutContent() {
       </section>
 
       {/* Milestones Timeline */}
-      <section className="py-20 bg-green-900">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6">
+      <section className="py-20 bg-green-900 relative overflow-hidden">
+        <div className="absolute inset-0 opacity-[0.04]" style={{
+          backgroundImage: `linear-gradient(rgba(255,255,255,0.3) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.3) 1px, transparent 1px)`,
+          backgroundSize: '60px 60px',
+        }} />
+        <div className="relative max-w-5xl mx-auto px-4 sm:px-6">
           <SectionHeading title={t.about.timelineTitle} light />
           <div className="space-y-8">
             {milestones.map((milestone, i) => (
@@ -100,9 +136,10 @@ export function AboutContent() {
               const Icon = value.icon
               return (
                 <AnimateOnScroll key={i} delay={i * 0.1}>
-                  <div className="text-center p-8 rounded-2xl border border-slate-200 bg-white">
-                    <div className="w-16 h-16 mx-auto rounded-2xl bg-green-900 flex items-center justify-center mb-5">
-                      <Icon className="w-8 h-8 text-yellow-400" />
+                  <div className="group text-center p-8 rounded-2xl border border-slate-100 bg-white hover:border-yellow-400 hover:shadow-xl transition-all duration-300 relative overflow-hidden">
+                  <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-green-900 to-yellow-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                    <div className="w-16 h-16 mx-auto rounded-2xl bg-green-900 flex items-center justify-center mb-5 group-hover:bg-yellow-500 transition-colors duration-300">
+                      <Icon className="w-8 h-8 text-yellow-400 group-hover:text-green-900 transition-colors duration-300" />
                     </div>
                     <h3 className="text-xl font-heading font-bold text-green-900 mb-3">
                       {locale === 'id' ? value.titleId : value.titleEn}

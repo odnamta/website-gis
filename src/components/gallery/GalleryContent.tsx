@@ -4,8 +4,7 @@ import { useState } from 'react'
 import { useLanguage } from '@/lib/i18n/context'
 import { AnimateOnScroll } from '@/components/shared/AnimateOnScroll'
 import { CTABanner } from '@/components/shared/CTABanner'
-import { ImagePlaceholder } from '@/components/shared/ImagePlaceholder'
-import { X, Filter } from 'lucide-react'
+import { X, Filter, Camera, Factory, Truck, Users, Building2 } from 'lucide-react'
 import { AnimatePresence, motion } from 'motion/react'
 
 type GalleryCategory = 'All' | 'Projects' | 'Equipment' | 'Team' | 'Office'
@@ -43,6 +42,49 @@ const filterLabelsId: Record<GalleryCategory, string> = {
   Office: 'Kantor',
 }
 
+const categoryIcons: Record<string, typeof Factory> = {
+  Projects: Factory,
+  Equipment: Truck,
+  Team: Users,
+  Office: Building2,
+}
+
+const categoryGradients: Record<string, string> = {
+  Projects: 'from-green-900 via-green-800 to-emerald-900',
+  Equipment: 'from-green-900 via-teal-900 to-green-900',
+  Team: 'from-green-900 via-green-800 to-green-900',
+  Office: 'from-green-900 via-emerald-900 to-green-800',
+}
+
+function GalleryVisual({ item, locale }: { item: GalleryItem; locale: string }) {
+  const Icon = categoryIcons[item.category] || Camera
+  const gradient = categoryGradients[item.category] || 'from-green-900 to-green-800'
+  const label = locale === 'id' ? item.labelId : item.labelEn
+
+  return (
+    <div className={`relative ${item.aspectRatio} bg-gradient-to-br ${gradient} overflow-hidden`}>
+      <div className="absolute inset-0 opacity-[0.06]" style={{
+        backgroundImage: 'repeating-linear-gradient(-45deg, transparent, transparent 10px, rgba(255,255,255,1) 10px, rgba(255,255,255,1) 11px)',
+      }} />
+      <div className="absolute inset-0 flex items-center justify-center opacity-[0.06]">
+        <Icon className="w-32 h-32 text-white" strokeWidth={0.5} />
+      </div>
+      <div className="relative z-10 flex flex-col items-center justify-center h-full p-4">
+        <div className="w-12 h-12 rounded-xl bg-yellow-500/15 border border-yellow-500/25 flex items-center justify-center mb-3">
+          <Icon className="w-6 h-6 text-yellow-400" />
+        </div>
+        <p className="text-white font-heading font-semibold text-sm text-center max-w-[200px] leading-snug">
+          {label}
+        </p>
+        <div className="flex items-center gap-1.5 mt-2">
+          <Camera className="w-3 h-3 text-green-400" />
+          <span className="text-xs text-green-400 font-medium uppercase tracking-wider">{item.category}</span>
+        </div>
+      </div>
+    </div>
+  )
+}
+
 export function GalleryContent() {
   const { t, locale } = useLanguage()
   const [activeFilter, setActiveFilter] = useState<GalleryCategory>('All')
@@ -55,8 +97,15 @@ export function GalleryContent() {
   return (
     <>
       {/* Hero */}
-      <section className="py-20 bg-green-900">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center">
+      <section className="py-20 bg-green-900 relative overflow-hidden">
+        <div className="absolute inset-0 opacity-[0.04]" style={{
+          backgroundImage: `linear-gradient(rgba(255,255,255,0.3) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.3) 1px, transparent 1px)`,
+          backgroundSize: '60px 60px',
+        }} />
+        <div className="absolute -right-20 top-0 w-96 h-96 opacity-[0.03]">
+          <Camera className="w-full h-full text-white" strokeWidth={0.3} />
+        </div>
+        <div className="relative max-w-4xl mx-auto px-4 sm:px-6 text-center">
           <AnimateOnScroll>
             <h1 className="text-4xl sm:text-5xl font-heading font-bold text-white mb-4">
               {t.gallery.pageTitle}
@@ -89,7 +138,7 @@ export function GalleryContent() {
             </div>
           </AnimateOnScroll>
 
-          {/* Photo grid — masonry-like with varying aspect ratios */}
+          {/* Photo grid */}
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {filteredItems.map((item, i) => (
               <AnimateOnScroll key={item.id} delay={i * 0.05}>
@@ -97,11 +146,7 @@ export function GalleryContent() {
                   onClick={() => setLightboxItem(item)}
                   className="group block w-full rounded-2xl overflow-hidden border border-slate-200 bg-white shadow-sm hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300 text-left"
                 >
-                  <ImagePlaceholder
-                    label={locale === 'id' ? item.labelId : item.labelEn}
-                    aspectRatio={item.aspectRatio}
-                    className="rounded-none border-0"
-                  />
+                  <GalleryVisual item={item} locale={locale} />
                   <div className="px-4 py-3">
                     <p className="text-sm font-medium text-green-900 group-hover:text-yellow-600 transition-colors">
                       {locale === 'id' ? item.labelId : item.labelEn}
@@ -148,11 +193,7 @@ export function GalleryContent() {
               >
                 <X className="w-5 h-5" />
               </button>
-              <ImagePlaceholder
-                label={locale === 'id' ? lightboxItem.labelId : lightboxItem.labelEn}
-                aspectRatio="aspect-video"
-                className="rounded-none border-0"
-              />
+              <GalleryVisual item={{...lightboxItem, aspectRatio: 'aspect-video'}} locale={locale} />
               <div className="p-6">
                 <h3 className="text-lg font-heading font-bold text-green-900">
                   {locale === 'id' ? lightboxItem.labelId : lightboxItem.labelEn}
