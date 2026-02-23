@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     template: '%s | PT Gama Intisamudera',
   },
   description:
-    'Spesialis transportasi heavy lift dan project cargo di seluruh Indonesia sejak 1995. International freight forwarding, project cargo handling, mechanical erection & assembling.',
+    'Specialist in heavy lift transportation and project cargo across Indonesia since 1995. International freight forwarding, project cargo handling, mechanical erection & assembling.',
   keywords: [
     'Gama Intisamudera',
     'heavy lift',
@@ -48,10 +48,10 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://gamaintisamudera.com'),
   openGraph: {
     title: 'PT Gama Intisamudera — Heavy Lift & Project Logistics',
-    description: 'Spesialis transportasi heavy lift dan project cargo di seluruh Indonesia sejak 1995.',
+    description: 'Specialist in heavy lift transportation and project cargo across Indonesia since 1995.',
     type: 'website',
-    locale: 'id_ID',
-    alternateLocale: 'en_US',
+    locale: 'en_US',
+    alternateLocale: 'id_ID',
     siteName: 'PT Gama Intisamudera',
     images: [
       {
@@ -65,7 +65,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'PT Gama Intisamudera — Heavy Lift & Project Logistics',
-    description: 'Spesialis transportasi heavy lift dan project cargo di seluruh Indonesia sejak 1995.',
+    description: 'Specialist in heavy lift transportation and project cargo across Indonesia since 1995.',
     images: ['/og-default.png'],
   },
   robots: {
@@ -80,7 +80,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="id" className={`${inter.variable} ${poppins.variable}`}>
+    <html lang="en" className={`${inter.variable} ${poppins.variable}`}>
       <head>
         <script
           type="application/ld+json"
@@ -91,7 +91,7 @@ export default function RootLayout({
               name: 'PT Gama Intisamudera',
               url: 'https://gamaintisamudera.com',
               logo: 'https://gamaintisamudera.com/logo-gis.png',
-              description: 'Spesialis transportasi heavy lift dan project cargo di seluruh Indonesia sejak 1995.',
+              description: 'Specialist in heavy lift transportation and project cargo across Indonesia since 1995.',
               address: {
                 '@type': 'PostalAddress',
                 streetAddress: 'Jl. Tanjung Priok No 12-12A',
