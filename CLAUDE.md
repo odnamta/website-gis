@@ -13,7 +13,6 @@ Corporate website for **PT. Gama Intisamudera** — heavy-lift logistics and pro
 - **Icons:** lucide-react
 - **Deployment:** Vercel (static export, `output: 'export'`)
 - **Forms:** Formspree
-- **Analytics:** @vercel/analytics
 - **Fonts:** Poppins (headings) + Inter (body) via `next/font/google`
 - **i18n:** Client-side React Context, ID/EN toggle, `?lang=en` support
 
