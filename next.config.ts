@@ -8,6 +8,7 @@ if (!process.env.NEXT_PUBLIC_FORMSPREE_ID) {
 const nextConfig: NextConfig = {
   output: 'export',
   poweredByHeader: false,
+  transpilePackages: ['@gama/website-data'],
   images: {
     unoptimized: true,
   },
