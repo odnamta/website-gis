@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://gls-id.com/sitemap.xml
+Sitemap: https://gamaintisamudera.com/sitemap.xml

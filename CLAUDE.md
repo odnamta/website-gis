@@ -14,7 +14,7 @@ Corporate website for **PT. Gama Intisamudera** — heavy-lift logistics and pro
 - **Deployment:** Cloudflare Pages via GitHub Actions (static export `out/`, `.github/workflows/deploy.yml` on push to main)
 - **Forms:** Formspree, form "GIS Website" in Dio's account (its own form since 24 Nov 2026; before that it shared the GLS form). The ID comes from the GitHub Actions repo secret `NEXT_PUBLIC_FORMSPREE_ID`, inlined at build time.
 - **Shared data:** `@gama/website-data` from the public repo odnamta/gama-website-data (private until 24 Nov 2026, which broke every deploy from 8 Apr)
-- **Unshipped:** branch `pending/post-audit-cleanup-2026-05` (agent commit, 1 May 2026) flips the default language to Indonesian, reversing the deliberate English default of 23 Feb (8ea7d9f); it also adds hreflang and moves types to devDependencies. Ship only after Dio decides the default language.
+- **Default language: English** (Dio, 23 Feb 2026, confirmed 24 Nov 2026). Indonesian is the toggle. Do not flip it. Branch `pending/post-audit-cleanup-2026-05` (agent commit, 1 May 2026) tried to; its robots file and devDependencies parts shipped in 0.1.2. Keep the branch for reference only, never ship it.
 - **Fonts:** Poppins (headings) + Inter (body) via `next/font/google`
 - **i18n:** Client-side React Context, ID/EN toggle, `?lang=en` support
 

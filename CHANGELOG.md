@@ -1,5 +1,14 @@
 # Changelog
 
+## [0.1.2] - 2026-11-24
+
+### Fixed
+- `public/robots.txt` still named the GLS sitemap (left over from the GLS scaffold). The live file comes from `src/app/robots.ts` and was already right, but the stale file is corrected so it cannot leak back.
+
+### Changed
+- `@types/*` and `typescript` moved to devDependencies.
+- Default language stays English (Dio's decision, confirmed 24 Nov 2026).
+
 ## [0.1.1] - 2026-11-24
 
 ### Fixed
