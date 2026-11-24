@@ -19,7 +19,8 @@ export function ContactContent() {
     try {
       const formId = process.env.NEXT_PUBLIC_FORMSPREE_ID
       if (!formId) {
-        setStatus('success')
+        // Never claim success when nothing was sent.
+        setStatus('error')
         return
       }
       const res = await fetch(`https://formspree.io/f/${formId}`, {

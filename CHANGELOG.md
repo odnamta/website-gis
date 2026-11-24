@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.1] - 2026-11-24
+
+### Fixed
+- Quote requests went to the Formspree form named "GLS Quote Request", the same form the GLS site uses, so GIS requests reached the inbox labelled as GLS. The site now has its own form, "GIS Website", set through the repo secret `NEXT_PUBLIC_FORMSPREE_ID`.
+- A build without a form ID showed visitors "success" while nothing was sent. It now shows the error state.
+- Deploys had failed since 8 Apr 2026 because `@gama/website-data` came from a private repo; that repo is public now, so this is the first deploy since then.
+
 ## [0.1.0] - 2026-02-21
 
 ### Added
